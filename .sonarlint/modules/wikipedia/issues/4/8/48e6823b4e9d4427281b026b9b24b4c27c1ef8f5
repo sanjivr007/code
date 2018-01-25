@@ -1,0 +1,20 @@
+
+Tsquid:S1170
+"!Make this final field static too.(¬ «áıÿÿÿÿHÏôRMINORZ
+CODE_SMELL
+®squid:S1319M"tThe type of the "matchingtext" object should be an interface such as "Map" rather than the implementation "HashMap".(ç¤Äíùÿÿÿÿ8şÛÑ‹„,HŞôRMINORZ
+CODE_SMELL
+r
+squid:S106-"9Replace this use of System.out or System.err by a logger.(„õËøÿÿÿÿÿ8é¼Ÿ„,HõRMAJORZ
+CODE_SMELL
+¢squid:S13193"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(íÈŸå8şÛÑ‹„,HİôRMINORZ
+CODE_SMELL
+ksquid:S1197M"8Move the array designator from the variable to the type.(ç¤ÄíùÿÿÿÿHÍôRMINORZ
+CODE_SMELL
+Œsquid:S00116
+"XRename this field "NoOfQuestions" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ «áıÿÿÿÿHĞôRMINORZ
+CODE_SMELL
+ squid:S13193"kThe type of the "map" object should be an interface such as "Map" rather than the implementation "HashMap".(íÈŸå8şÛÑ‹„,HÜôRMINORZ
+CODE_SMELL
+fsquid:S1197'"8Move the array designator from the variable to the type.(ğËå€HÌôRMINORZ
+CODE_SMELL

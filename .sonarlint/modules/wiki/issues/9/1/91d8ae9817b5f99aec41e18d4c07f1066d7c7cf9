@@ -1,0 +1,9 @@
+
+Nsquid:S2386"Make this member "protected".(ßæÔŸH‘óRMINORZVULNERABILITY
+_squid:S1612",Replace this lambda with a method reference.(™Æ´èşÿÿÿÿHóRMINORZ
+CODE_SMELL
+fsquid:S1197"8Move the array designator from the variable to the type.(Ø‡„ñHóRMINORZ
+CODE_SMELL
+Msquid:S2386"Make this member "protected".(Œó®BH’óRMINORZVULNERABILITY
+ squid:S1319"sThe type of the "stopWordSet" object should be an interface such as "Set" rather than the implementation "HashSet".(Œó®BHóRMINORZ
+CODE_SMELL

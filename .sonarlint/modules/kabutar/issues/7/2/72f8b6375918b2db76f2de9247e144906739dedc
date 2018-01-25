@@ -1,0 +1,19 @@
+
+¹%squid:RedundantThrowsDeclarationCheck7"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(á¦ò÷ûÿÿÿÿHÆõRMINORZ
+CODE_SMELL
+squid:S2629X"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(°ö¼ùÿÿÿÿHÇõRMAJORZ
+CODE_SMELL
+dsquid:S1068/"6Remove this unused "genericEmailSender" private field.(©Ç‘HÈõRMAJORZ
+CODE_SMELL
+–squid:S1450+"hRemove the "transactionalEmailMessage" field and declare it as a local variable in the relevant methods.(¬ÈÎHÉõRMINORZ
+CODE_SMELL
+”squid:S1450-"fRemove the "transactionalSMSMessage" field and declare it as a local variable in the relevant methods.(¾øÖ˜HÊõRMINORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(ôÆ¹øHËõRMAJORZ
+CODE_SMELL
+€squid:S001171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÉğÖHÌõRMINORZ
+CODE_SMELL
+…squid:S001177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¦ò÷ûÿÿÿÿHÍõRMINORZ
+CODE_SMELL
+€squid:S00117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÂğ÷HÎõRMINORZ
+CODE_SMELL

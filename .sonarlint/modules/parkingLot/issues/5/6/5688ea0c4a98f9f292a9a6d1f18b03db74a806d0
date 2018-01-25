@@ -1,0 +1,8 @@
+
+m
+squid:S106m"9Replace this use of System.out or System.err by a logger.(¯íÛ³8ÑöÞ»ƒ,HõïRMAJORZ
+CODE_SMELL
+`squid:S1148>"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8°³ô»ƒ,HöïRMINORZVULNERABILITY
+`squid:S1148@"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8°³ô»ƒ,H÷ïRMINORZVULNERABILITY
+ysquid:S2147?"DCombine this catch with the one at line 61, which has the same body.(ï­£Ä8ÑöÞ»ƒ,HøïRMINORZ
+CODE_SMELL

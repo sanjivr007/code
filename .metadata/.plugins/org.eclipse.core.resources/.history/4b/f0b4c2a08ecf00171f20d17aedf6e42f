@@ -1,0 +1,17 @@
+package tlvprocessor;
+
+public class CommandGenerator {
+	
+	public Command getCommand(String command){
+		
+		if(command.equalsIgnoreCase(Commands.REPLCE.name())){
+            return new ReplaceCommand(command);
+        }
+        else if(command.equalsIgnoreCase("UPPRCS")){
+            return new UppercaseCommand(command);
+        }
+		return null;
+		
+	}
+
+}

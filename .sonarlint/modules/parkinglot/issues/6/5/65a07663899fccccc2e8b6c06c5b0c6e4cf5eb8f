@@ -1,0 +1,4 @@
+
+ö"squid:ClassVariableVisibilityCheck"RMake slotNo a static final constant or non-public and provide accessors if needed.(ÚâîèHÀ–RMINORZVULNERABILITY
+osquid:S1126"AReplace this if-then-else statement by a single return statement.(ó‘âÏH…–RMINORZ
+CODE_SMELL

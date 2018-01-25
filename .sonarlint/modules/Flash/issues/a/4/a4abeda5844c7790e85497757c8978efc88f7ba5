@@ -1,0 +1,11 @@
+
+_squid:S1135"2Complete the task associated to this TODO comment.(…ο†HξύRINFOZ
+CODE_SMELL
+[squid:S1481}"-Remove this unused "jsonData" local variable.(ά¥µHούRMINORZ
+CODE_SMELL
+Ysquid:S00108")Either remove or fill this block of code.(ο­£ΔHρύRMAJORZ
+CODE_SMELL
+jsquid:S1854}"<Remove this useless assignment to local variable "jsonData".(ά¥µHσύRMAJORZ
+CODE_SMELL
+€squid:S001177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(νψ—ΰHυύRMINORZ
+CODE_SMELL

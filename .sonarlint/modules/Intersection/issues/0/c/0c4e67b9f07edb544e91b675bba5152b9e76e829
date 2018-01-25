@@ -1,0 +1,19 @@
+
+Rsquid:S1659"Declare "j" on a separate line.(ãäÚ‘üÿÿÿÿHĞÖRMINORZ
+CODE_SMELL
+Rsquid:S1659"Declare "k" on a separate line.(ãäÚ‘üÿÿÿÿHÑÖRMINORZ
+CODE_SMELL
+ksquid:S1197"8Move the array designator from the variable to the type.(§¹Ô÷şÿÿÿÿHÒÖRMINORZ
+CODE_SMELL
+ksquid:S1197"8Move the array designator from the variable to the type.(ËÌİûşÿÿÿÿHÓÖRMINORZ
+CODE_SMELL
+fsquid:S1197!"8Move the array designator from the variable to the type.(İÇ¡HÔÖRMINORZ
+CODE_SMELL
+fsquid:S1197""8Move the array designator from the variable to the type.(§ÎêHÕÖRMINORZ
+CODE_SMELL
+dsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHÖÖRINFOZ
+CODE_SMELL
+Tsquid:S1168	"&Return an empty array instead of null.(¥¹ïH×ÖRMAJORZ
+CODE_SMELL
+…squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¾¡ö+HØÖRMINORZ
+CODE_SMELL

@@ -1,0 +1,13 @@
+
+› squid:ForLoopCounterChangedCheck<"XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚèH¹ÝRMAJORZ
+CODE_SMELL
+› squid:ForLoopCounterChangedCheck@"XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚèHºÝRMAJORZ
+CODE_SMELL
+› squid:ForLoopCounterChangedCheckL"XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚèH»ÝRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚äµïH¼ÝRMAJORZ
+CODE_SMELL
+Œsquid:S1488	"^Immediately return this expression instead of assigning it to the temporary variable "inputs".(³Ä¤‹H½ÝRMINORZ
+CODE_SMELL
+‚squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(–¢·H¾ÝRCRITICALZ
+CODE_SMELL

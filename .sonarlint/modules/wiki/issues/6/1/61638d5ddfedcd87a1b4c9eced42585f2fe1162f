@@ -1,0 +1,11 @@
+
+fsquid:S1197"8Move the array designator from the variable to the type.(Ø‡„ñHøóRMINORZ
+CODE_SMELL
+ squid:S1319"sThe type of the "stopWordSet" object should be an interface such as "Set" rather than the implementation "HashSet".(Œó®BHùóRMINORZ
+CODE_SMELL
+Òsquid:S1598"›This file "StopWord.java" should be located in "stringprocessor" directory, not in "/home/sanjiv/Documents/workspace-sts-3.8.4.RELEASE/wiki/src/processor".(Ù›¿­øÿÿÿÿHúóRCRITICALZ
+CODE_SMELL
+_squid:S1612",Replace this lambda with a method reference.(™Æ´èþÿÿÿÿHûóRMINORZ
+CODE_SMELL
+Nsquid:S2386"Make this member "protected".(ßæÔŸHüóRMINORZVULNERABILITY
+Msquid:S2386"Make this member "protected".(Œó®BHýóRMINORZVULNERABILITY

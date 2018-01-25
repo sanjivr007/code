@@ -1,0 +1,7 @@
+
+Zsquid:S1068"'Remove this unused "log" private field.(ºš¼ûÿÿÿÿHµŸRMAJORZ
+CODE_SMELL
+ksquid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ì–íÔH¶ŸRMINORZ
+CODE_SMELL
+ksquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿH·ŸRMINORZ
+CODE_SMELL

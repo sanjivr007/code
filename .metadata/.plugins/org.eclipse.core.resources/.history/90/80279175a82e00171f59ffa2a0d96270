@@ -1,0 +1,45 @@
+package com.ail.notification.code;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ail.notification.domain.User;
+import com.ail.notification.repository.UserRepository;
+import com.ail.notification.service.MailService;
+import com.ail.notification.service.UserService;
+import com.ail.notification.service.dto.UserDTO;
+import com.ail.notification.web.rest.util.PaginationUtil;
+import com.codahale.metrics.annotation.Timed;
+
+import io.swagger.annotations.ApiParam;
+
+@RestController
+@RequestMapping("/api")
+public class Controller {
+	
+	private final UserService userService;
+	
+	public Controller( UserService userService) {
+        this.userService = userService;
+    }
+
+	
+	 @GetMapping("/getnotification")
+	 @Timed
+	 public ResponseEntity<Optional<User>> getNotification(@PathVariable String loginId) {
+	        Optional<User> users = userService.getUserWithAuthoritiesByLogin(loginId);
+	      //  HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(users, "/api/getnotification");
+	        return new ResponseEntity<>(users, null, HttpStatus.OK);
+	    }
+
+}

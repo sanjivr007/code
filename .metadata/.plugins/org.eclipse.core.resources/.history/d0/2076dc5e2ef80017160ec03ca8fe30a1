@@ -1,0 +1,66 @@
+package allPossibleWords;
+
+import java.util.Scanner;
+
+public class Max {
+	public static int min(int a, int b) {
+		return a < b ? a : b;
+	}
+
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+		
+		String no = s.nextLine(); 
+		int swapcount = s.nextInt(); 
+		
+		System.out.println(no+" "+swapcount);
+		
+		int maxno= getMaxNo( no,swapcount)
+		
+		/*for(int i=0;i<min(no.length(),swap);i++){
+			
+			
+		}*/
+		
+		
+	}
+
+	public int getMaxNo(String no,int swapcount){
+		int max=  Integer.parseInt(no);	
+		int n = no.length();
+		if(swapcount==0)
+			return 0;
+		
+		for (int i = 0; i < n - 1; i++)
+	    {
+	      
+	        
+	        for (int j = i + 1; j < n; j++)
+	        {
+	        	if (no[i] < no[j])
+	            {
+	                
+	                swap(no[i], no[j]);
+	 
+	               
+	                if (no.compare(max) > 0)
+	                    max = no;
+	 
+	                
+	                getMaxNo(no, swapcount - 1);
+	 
+	                
+	                swap(no[i], no[j]);
+	            }
+	        	
+	        	
+	        }
+	        
+	    }
+		
+		
+	}
+
+	
+
+}

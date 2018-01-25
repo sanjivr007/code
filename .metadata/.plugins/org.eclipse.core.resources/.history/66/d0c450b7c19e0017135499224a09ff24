@@ -1,0 +1,100 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+custom:
+    local.attachmentstore.path: /usr/share/tomcat8/uploads
+
+spring:
+    profiles:
+        active: qa
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false # we use Grunt + BrowserSync for livereload
+    datasource:
+        driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+        url: jdbc:mysql://DATASOURCE_URL/transporter?useUnicode=true&characterEncoding=utf8
+        name:
+        username: DATASOURCE_USERNAME
+        password: DATASOURCE_PASSWORD
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+        database: MYSQL
+        show_sql: false
+        properties:
+            hibernate.cache.use_second_level_cache: false
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+    mail:
+        host: localhost
+    messages:
+        cache-seconds: 1
+    thymeleaf:
+        cache: false
+
+services:
+    keycloak:
+        url:  KEYCLOAK_AUTH_URL
+        username:  KEYCLOAK_USER_NAME
+        password:  KEYCLOAK_PASSWORD
+        clientId:  KEYCLOAK_CLIENT
+    aws:
+        awsClientAccessKey:  AWS_CLIENT_ACCESS_KEY
+        awsClientSecretKey:  AWS_CLIENT_SECRET_KEY
+        awsBucketName:  AWS_BUCKET_NAME
+        awsFileUploadDirName:  AWS_FILE_UPLOAD_DIR_NAME
+        awsUrlAppend:  AWS_URL_APPEND 
+        awsRegion: US_EAST_1
+                
+
+liquibase:
+    contexts: dev
+
+server:
+    port: 8080
+
+# ===================================================================
+# JHipster specific properties
+# ===================================================================
+
+jhipster:
+    datasource: # JHipster-specific configuration, in addition to the standard spring.datasource properties
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+    mail: # specific JHipster mail property, for standard properties see MailProperties
+        from: transporter@localhost
+    metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
+        jmx.enabled: true
+        spark:
+            enabled: false
+            host: localhost
+            port: 9999
+        graphite:
+            enabled: true
+            host: graphite-qa.ailiens.com
+            port: 2003
+            prefix: transporter
+MSG:
+    env: qa
+    logging: true
+
+    
+healthCheck:
+    baseUrl: /api
+    services:
+     - name: kongConnect
+       host: kong-qa.ailiens.com
+       port: 8443
+       timeout: 2000                      

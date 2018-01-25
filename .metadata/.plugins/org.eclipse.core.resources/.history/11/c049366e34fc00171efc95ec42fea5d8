@@ -1,0 +1,151 @@
+package com.ail.notification.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.validation.constraints.NotNull;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
+@Document(collection = "record")
+public class Record implements Serializable {
+
+	@Id
+	private String id;
+
+	@Field("device_id")
+	private String deviceId;
+
+	@Field("platform_token")
+	private String platformToken;
+
+	@Field("firebase_token")
+	private String firebaseToken;
+
+	@Field("user_identifier")
+	private String userIdentifier;
+
+	@Field("module")
+	private String module;
+
+	@NotNull
+	@Field("app_version")
+	private String appVersion;
+
+	@NotNull
+	private String os;
+
+	@NotNull
+	@Field("login_state")
+	private String loginState;
+
+	@Field("notification_permission")
+	private boolean notificationPermission = true;
+
+	@DateTimeFormat(iso = ISO.DATE_TIME)
+	private Date createdDate;
+
+	@DateTimeFormat(iso = ISO.DATE_TIME)
+	private Date modifiedDate;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	public String getPlatformToken() {
+		return platformToken;
+	}
+
+	public void setPlatformToken(String platformToken) {
+		this.platformToken = platformToken;
+	}
+
+	public String getFirebaseToken() {
+		return firebaseToken;
+	}
+
+	public void setFirebaseToken(String firebaseToken) {
+		this.firebaseToken = firebaseToken;
+	}
+
+	public String getUserIdentifier() {
+		return userIdentifier;
+	}
+
+	public void setUserIdentifier(String userIdentifier) {
+		this.userIdentifier = userIdentifier;
+	}
+
+	public String getAppVersion() {
+		return appVersion;
+	}
+
+	public void setAppVersion(String appVersion) {
+		this.appVersion = appVersion;
+	}
+
+	public String getOs() {
+		return os;
+	}
+
+	public void setOs(String os) {
+		this.os = os;
+	}
+
+	public String getLoginState() {
+		return loginState;
+	}
+
+	public void setLoginState(String loginState) {
+		this.loginState = loginState;
+	}
+
+	public boolean isNotificationPermission() {
+		return notificationPermission;
+	}
+
+	public void setNotificationPermission(boolean notificationPermission) {
+		this.notificationPermission = notificationPermission;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
+	}
+
+	public String getModule() {
+		return module;
+	}
+
+	public void setModule(String module) {
+		this.module = module;
+	}
+
+}

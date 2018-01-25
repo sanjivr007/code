@@ -1,0 +1,15 @@
+package com.ail.notification.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ail.notification.repository.RecordRepository;
+
+@Service
+public class RecordService {
+	private final RecordRepository recordRepository;
+	
+	public RecordService(RecordRepository recordRepository){
+		this.recordRepository=recordRepository;
+	}
+
+}

@@ -1,0 +1,9 @@
+
+†squid:UselessImportCheck"?Remove this unused import 'com.ailiens.common.MsgEventHandler'.(¬ß‘êþÿÿÿÿ8ÏÅŸ»î+HÂõRMINORZ
+CODE_SMELL
+Â%squid:RedundantThrowsDeclarationCheck "nRemove the declaration of thrown exception 'java.io.IOException' which is a subclass of 'java.lang.Exception'.(³­¨åøÿÿÿÿ8þ½€öî+HÃõRMINORZ
+CODE_SMELL
+‹squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ù« ÅùÿÿÿÿHÄõRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(ª«øë8þ½€öî+HÅõRMAJORZ
+CODE_SMELL

@@ -1,0 +1,18 @@
+package allPossibleWords;
+
+import java.util.Scanner;
+
+public class Max {
+	
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+		
+		String no = s.nextLine(); 
+		int swap = s.nextInt(); 
+		
+		System.out.println(no+" "+swap);
+		
+		
+	}
+
+}

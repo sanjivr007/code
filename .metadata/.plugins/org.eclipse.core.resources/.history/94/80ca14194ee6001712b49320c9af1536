@@ -1,0 +1,59 @@
+package com.ail.kabutar.MSG;
+
+import javax.inject.Inject;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import com.ail.kabutar.service.ConsumerThirdPartyServiceEMAIL;
+import com.ailiens.common.CommonMsgEventHandler;
+import com.ailiens.common.EventResponse;
+import com.ailiens.common.MsgEventHandler;
+import com.ailiens.common.MsgMessage;
+
+import java.io.IOException;
+
+
+public class EventHandlerEMAIL extends CommonMsgEventHandler {
+
+	private final Logger log = LoggerFactory.getLogger(EventHandlerEMAIL.class);
+
+	@Inject
+	private ConsumerThirdPartyServiceEMAIL consumerThirdPartyServiceEMAIL;
+
+	@Override
+	public String getEventType() {
+
+		return "EMAIL";
+	}
+
+    @Override
+    public String handle(MsgMessage message) throws Exception, IOException {
+
+        log.info(message.getPayload());
+        message.getPayload();
+        consumerThirdPartyServiceEMAIL.consumer(message.getPayload());
+        return message.getPayload();
+
+
+
+    }
+
+
+
+	/*@Override
+	public EventResponse invoke(MsgMessage message) {
+
+		log.info(message.getPayload());
+		try {
+			consumerThirdPartyServiceEMAIL.consumer(message.getPayload());
+		} catch (Exception e) {
+			return EventResponse.builder().status(400).message("Consumer falied").build();
+		}
+		return EventResponse.builder().status(200).message(message.getPayload()).build();
+
+	}
+*/
+
+}

@@ -1,0 +1,105 @@
+# ===================================================================
+# Spring Boot configuration for the "prod" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+custom:
+    local.attachmentstore.path: /usr/share/tomcat8/uploads
+
+spring:
+    profiles:
+        active: prod
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    datasource:
+        driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+        url: jdbc:mysql://DATASOURCE_URL/transporter?useUnicode=true&characterEncoding=utf8
+        name:
+        username: DATASOURCE_USERNAME
+        password: DATASOURCE_PASSWORD
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+        database: MYSQL
+        show_sql: false
+        properties:
+            hibernate.cache.use_second_level_cache: false
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+    mail:
+        host: localhost
+        port: 25
+        username:
+        password:
+    thymeleaf:
+        cache: true
+        
+services:
+    keycloak:
+        url:  KEYCLOAK_AUTH_URL
+        username:  KEYCLOAK_USER_NAME
+        password:  KEYCLOAK_PASSWORD
+        clientId:  KEYCLOAK_CLIENT
+    aws:
+        awsClientAccessKey:  AWS_CLIENT_ACCESS_KEY
+        awsClientSecretKey:  AWS_CLIENT_SECRET_KEY
+        awsBucketName:  AWS_BUCKET_NAME
+        awsFileUploadDirName:  AWS_FILE_UPLOAD_DIR_NAME
+        awsUrlAppend:  AWS_URL_APPEND
+        awsRegion: AP_SOUTHEAST_1        
+
+liquibase:
+    contexts: prod
+
+server:
+    port: 8080
+    compression:
+        enabled: true
+        mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+
+# ===================================================================
+# JHipster specific properties
+# ===================================================================
+
+jhipster:
+    http:
+        cache: # Used by the CachingHttpHeadersFilter
+            timeToLiveInDays: 31
+    mail: # specific JHipster mail property, for standard properties see MailProperties
+        from: transporter@localhost
+    metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
+        jmx.enabled: true
+        spark:
+            enabled: false
+            host: localhost
+            port: 9999
+        graphite:
+            enabled: true
+            host: graphite-prod.ailiens.com
+            port: 2003
+            prefix: transporter-prod
+
+MSG:
+    env: prod
+    logging: true
+    baseUrl:
+    poolSize: 10
+    cluster: mumbai1
+    poolType: LAZY
+
+healthCheck:
+    baseUrl: /api
+    services:
+     - name: kongConnect
+       host: kong.ailiens.com
+       port: 8443
+       timeout: 2000                

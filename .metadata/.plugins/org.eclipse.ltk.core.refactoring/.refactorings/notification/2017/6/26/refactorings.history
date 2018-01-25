@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;notification&apos;&#x0A;- Original project: &apos;notification&apos;&#x0A;- Original element: &apos;notification/src/main/java/com.notification.code.exceptions&apos;" description="Delete element" element1="/src\/main\/java&lt;com.notification.code.exceptions" element2="/src\/main\/java&lt;com.notification.code" element3="/src\/main\/java&lt;com.notification" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1498510335565" subPackages="false" version="1.0"/>
+</session>

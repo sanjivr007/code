@@ -1,0 +1,62 @@
+package com.ail.transporter.code.service;
+
+import java.util.UUID;
+
+import javax.inject.Inject;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+import com.ail.transporter.code.MSG.DispatchProducerMessage;
+import com.ail.transporter.code.request.ProducerRequest;
+import com.ail.transporter.code.response.ProducerResponse;
+import com.ail.transporter.domain.util.RequestLogUtil;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@Component
+@Scope("prototype")
+public class ServiceSendMessage {
+	private final Logger log = LoggerFactory.getLogger(ServiceSendMessage.class);
+
+	@Inject
+	private ValidationService validationService;
+
+	@Inject
+	private DispatchProducerMessage dispatchProducerMessage;
+
+	@Inject
+	ObjectMapper mapper;
+	
+	@Inject
+	private RequestLogUtil requestLogUtil;
+
+	public ProducerResponse sendMessage(ProducerRequest producerRequest) throws Exception {
+		ProducerResponse producerResponse = null;
+		System.out.println("Controller comes service send message");
+		if (producerRequest.isValidateTemplate())
+			producerResponse = validationService.validateAndSetMessageData(producerRequest);
+		else
+			producerResponse = validationService.validateOnlyMetaData(producerRequest);
+
+		if (producerRequest.isValidateTemplate() && producerResponse.isTemplateValidated()
+				&& producerResponse.getTemplateStatus().equals("APPROVED")) {
+			// return ResponseEntity.ok().body(producerResponse);
+			producerResponse.setRequestData(producerRequest);
+
+			producerResponse.setRequestId(UUID.randomUUID().toString());
+			long dtr = System.currentTimeMillis();
+			dispatchProducerMessage.invoke(mapper.writeValueAsString(producerResponse));
+			requestLogUtil.insertTemplate(producerRequest.getTemplateId());
+			long end = System.currentTimeMillis();
+			log.info("end-dtr = " + (end - dtr));			
+
+			return producerResponse;
+
+		}
+		return producerResponse;
+
+	}
+
+}

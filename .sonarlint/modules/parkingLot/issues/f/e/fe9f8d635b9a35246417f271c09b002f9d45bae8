@@ -1,0 +1,52 @@
+
+s
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(«†’˜øÿÿÿÿ8ÂŠë»ƒ,HÚRMAJORZ
+CODE_SMELL
+tsquid:S1155º">Use isEmpty() to check whether the collection is empty or not.(Òı‡¢8Ù¦í»ƒ,H£ÚRMINORZ
+CODE_SMELL
+n
+squid:S106’"9Replace this use of System.out or System.err by a logger.(Ïüç‡8ÂŠë»ƒ,HŸÚRMAJORZ
+CODE_SMELL
+s
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(«†’˜øÿÿÿÿ8ÂŠë»ƒ,H‘ÚRMAJORZ
+CODE_SMELL
+n
+squid:S106»"9Replace this use of System.out or System.err by a logger.(µ’´“8ÂŠë»ƒ,H˜ÚRMAJORZ
+CODE_SMELL
+r
+squid:S106_"9Replace this use of System.out or System.err by a logger.(÷°ñ¹ùÿÿÿÿ8ÂŠë»ƒ,HšÚRMAJORZ
+CODE_SMELL
+s
+squid:S106³"9Replace this use of System.out or System.err by a logger.(«†’˜øÿÿÿÿ8ÂŠë»ƒ,H—ÚRMAJORZ
+CODE_SMELL
+ysquid:S1155¬">Use isEmpty() to check whether the collection is empty or not.(èßìÜüÿÿÿÿ8Ù¦í»ƒ,H¢ÚRMINORZ
+CODE_SMELL
+r
+squid:S106P"9Replace this use of System.out or System.err by a logger.(»ƒåŞøÿÿÿÿ8ÂŠë»ƒ,HÚRMAJORZ
+CODE_SMELL
+ˆsquid:S1192‚"JDefine a constant instead of duplicating this literal "Not found" 3 times.(«†’˜øÿÿÿÿ8ÂŠë»ƒ,HÚRCRITICALZ
+CODE_SMELL
+s
+squid:S106Ã"9Replace this use of System.out or System.err by a logger.(úê¤Âùÿÿÿÿ8ÂŠë»ƒ,H“ÚRMAJORZ
+CODE_SMELL
+r
+squid:S1063"9Replace this use of System.out or System.err by a logger.(‘ ›ıøÿÿÿÿ8ÂŠë»ƒ,H™ÚRMAJORZ
+CODE_SMELL
+s
+squid:S106Ë"9Replace this use of System.out or System.err by a logger.(¢ÈŠØÿÿÿÿÿ8ÂŠë»ƒ,HœÚRMAJORZ
+CODE_SMELL
+r
+squid:S106\"9Replace this use of System.out or System.err by a logger.(Ğ¬ßÓıÿÿÿÿ8ÂŠë»ƒ,H”ÚRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ï¹‰ëùÿÿÿÿ8ÂŠë»ƒ,H’ÚRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(¯Œï8ÂŠë»ƒ,H–ÚRMAJORZ
+CODE_SMELL
+m
+squid:S106|"9Replace this use of System.out or System.err by a logger.(¬®ĞÆ8ÂŠë»ƒ,H•ÚRMAJORZ
+CODE_SMELL
+r
+squid:S106n"9Replace this use of System.out or System.err by a logger.(Û¬íÕúÿÿÿÿ8ÂŠë»ƒ,H›ÚRMAJORZ
+CODE_SMELL

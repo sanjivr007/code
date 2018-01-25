@@ -1,0 +1,126 @@
+package com.ail.notification.code.request;
+
+import java.util.Set;
+
+import javax.validation.constraints.NotNull;
+
+public class RecordRequestBody {
+
+	private String deviceId;
+
+	private String platformToken;
+
+	private String firebaseToken;
+
+	private String userIdentifier;
+
+	private String module;
+
+	@NotNull
+	private String appVersion;
+
+	@NotNull
+	private String os;
+
+	@NotNull
+	private String loginState;
+
+	private Boolean notificationPermission;
+
+	public String getModule() {
+		return deviceId;
+	}
+
+	public void setModule(String module) {
+		this.module = module;
+	}
+	
+	public String getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	public String getPlatformToken() {
+		return platformToken;
+	}
+
+	public void setPlatformToken(String platformToken) {
+		this.platformToken = platformToken;
+	}
+
+	public String getFirebaseToken() {
+		return firebaseToken;
+	}
+
+	public void setFirebaseToken(String firebaseToken) {
+		this.firebaseToken = firebaseToken;
+	}
+
+	public String getUserIdentifier() {
+		return userIdentifier;
+	}
+
+	public void setUserIdentifier(String userIdentifier) {
+		this.userIdentifier = userIdentifier;
+	}
+
+	public String getAppVersion() {
+		return appVersion;
+	}
+
+	public void setAppVersion(String appVersion) {
+		this.appVersion = appVersion;
+	}
+
+	public String getOs() {
+		return os;
+	}
+
+	public void setOs(String os) {
+		this.os = os;
+	}
+
+	public String getLoginState() {
+		return loginState;
+	}
+
+	public void setLoginState(String loginState) {
+		this.loginState = loginState;
+	}
+
+	public Boolean getNotificationPermission() {
+		return notificationPermission;
+	}
+
+	public void setNotificationPermission(Boolean notificationPermission) {
+		this.notificationPermission = notificationPermission;
+	}
+
+	public boolean validateLoginState() {
+		return (this.loginState.equals("non_logged_in") || this.loginState.equals("logged_in"));
+	}
+
+	public boolean validateOs() {
+		return this.os.equals("android") || this.os.equals("ios");
+	}
+
+	/*
+	 * public boolean validate() { boolean a=
+	 * (this.loginState.equals("non_logged_in") ||
+	 * this.loginState.equals("logged_in")); boolean b=
+	 * this.os.equals("android") || this.os.equals("ios");
+	 * 
+	 * return a && b; }
+	 */
+
+	public boolean validatePermission() {
+		return true;
+
+	}
+
+	
+
+}

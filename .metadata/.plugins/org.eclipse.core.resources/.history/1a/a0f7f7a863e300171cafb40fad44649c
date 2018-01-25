@@ -1,0 +1,17 @@
+package com.example.demo.call;
+
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class LocalConfiguration {
+	 
+
+    @Bean
+    public EType myBean() {
+		return null;
+        // instantiate, configure and return bean ...
+    }
+
+}

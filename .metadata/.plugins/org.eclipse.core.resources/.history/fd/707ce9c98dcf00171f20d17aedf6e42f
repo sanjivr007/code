@@ -1,0 +1,5 @@
+package tlvprocessor;
+
+public interface Parser {
+
+}

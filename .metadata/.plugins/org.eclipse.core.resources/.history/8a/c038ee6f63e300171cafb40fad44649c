@@ -1,0 +1,9 @@
+package com.example.demo.call;
+
+import org.springframework.context.annotation.Conf
+
+//@Configuration
+public class LocalConfiguration {
+	 
+
+}

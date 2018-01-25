@@ -1,0 +1,7 @@
+
+ysquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ÀÈºH€èRMAJORZ
+CODE_SMELL
+jsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿH‚èRMINORZ
+CODE_SMELL
+„squid:S3776†"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ÜÑãHèRCRITICALZ
+CODE_SMELL

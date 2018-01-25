@@ -1,0 +1,59 @@
+package allPossibleWords;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Mismatch {
+
+	static final int no_of_friends = 2;
+	
+	public int findvalue(Set<Integer> friend2,int tosearchandDelete){
+		int pos=-10;
+		int itr=0
+		for(int value:friend2){
+			if(value==tosearchandDelete){
+				pos=itr;
+				break;
+			}
+			itr++;	
+		}
+		
+		return pos;
+		
+	}
+
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+
+		int name = s.nextInt(); // Reading input from STDIN
+		// System.out.println("Hi, " + name + ".");
+		/*
+		 * List<Integer> friend1 = new ArrayList<>(); List<Integer> friend2 =
+		 * new ArrayList<>();
+		 */
+		/*HashMap<Integer, Integer> friend1 = new HashMap<>();
+		HashMap<Integer, Integer> friend2 = new HashMap<>();*/
+		Set<Integer> friend1 = new HashSet<>();
+		Set<Integer> friend2 = new HashSet<>();
+		
+
+		for (int i = 0; i < name; i++) {
+
+			friend1.add(s.nextInt());
+		}
+		for (int i = 0; i < name; i++) {
+			friend2.add(s.nextInt());
+
+		}
+		for(int value:friend1){
+			int pos= findvalue(friend2,value);
+		}
+
+	}
+
+}

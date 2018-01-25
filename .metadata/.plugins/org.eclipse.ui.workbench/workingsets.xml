@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1494052026366_1" label="spring-security-pac4j-boot-demo" name="spring-security-pac4j-boot-demo">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-security-pac4j-boot-demo" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1494112666049_2" label="spring-data-aerospike" name="spring-data-aerospike">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-data-aerospike" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1493639811771_0" label="Window Working Set" name="Aggregate for window 1493639811771"/>
+</workingSetManager>

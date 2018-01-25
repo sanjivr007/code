@@ -1,0 +1,29 @@
+
+dsquid:S16594"*Declare "answersIndex" on a separate line.(¨λ­ώÿÿÿÿ8ιά”τƒ,H έRMINORZ
+CODE_SMELL
+“squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(υ–Ώ»ϋÿÿÿÿ8ιά”τƒ,H¤έRMINORZ
+CODE_SMELL
+squid:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Ηµν‘8ιά”τƒ,H¨έRCRITICALZ
+CODE_SMELL
+jsquid:S16594"0Declare "answerCurrentIndex" on a separate line.(¨λ­ώÿÿÿÿ8ιά”τƒ,HέRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(Ϋτ8ιά”τƒ,H¦έRMAJORZ
+CODE_SMELL
+r
+squid:S106J"9Replace this use of System.out or System.err by a logger.(„υΛψÿÿÿÿÿ8ιά”τƒ,H§έRMAJORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").( 8ιά”τƒ,H¥έRMINORZ
+CODE_SMELL
+‡squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(νζξ¨8‘ρΉ„,H―ςRMINORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ΫªΰÒ8ιά”τƒ,H£έRMINORZ
+CODE_SMELL
+rsquid:S1197"8Move the array designator from the variable to the type.(ΔάΆ‹ωÿÿÿÿ8ιά”τƒ,H΅έRMINORZ
+CODE_SMELL
+msquid:S1197"8Move the array designator from the variable to the type.(‚Τσσ8ιά”τƒ,HΆέRMINORZ
+CODE_SMELL
+Πsquid:S1598"–This file "WikiAssit.java" should be located in "wikiController" directory, not in "/home/sanjiv/Documents/workspace-sts-3.8.4.RELEASE/wiki/src/wiki".(μιΝÿÿÿÿÿ8²ΙΘ„,RCRITICALZ
+CODE_SMELL
+squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(μιΝÿÿÿÿÿ8²ΙΘ„,RMINORZ
+CODE_SMELL

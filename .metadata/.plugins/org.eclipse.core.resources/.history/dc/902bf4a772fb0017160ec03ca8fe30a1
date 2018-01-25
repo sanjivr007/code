@@ -1,0 +1,22 @@
+package com.ail.notification.service;
+
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.ail.notification.domain.Record;
+import com.ail.notification.repository.RecordRepository;
+
+@Service
+public class RecordServiceDB {
+	private final RecordRepository recordRepository;
+	
+	public RecordServiceDB(RecordRepository recordRepository){
+		this.recordRepository=recordRepository;
+	}//
+
+	public Record findRecordById(String DeviceId){
+		//Record record = recordRepository.findOneBydeviceId(DeviceId);
+		return recordRepository.findOneBydeviceId(DeviceId);
+	}
+}

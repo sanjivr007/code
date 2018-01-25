@@ -1,0 +1,21 @@
+
+^
+.src/main/resources/config/application-prod.yml,d/7/d7fd156b16403a49ea13b454f1b209bc42dacfa9
+p
+@src/main/java/com/ail/mbo/storm/web/rest/CustomTaskResource.java,d/6/d604fc213b1404bf5a22c226f400209543149506
+u
+Esrc/main/java/com/ail/mbo/storm/service/custom/CustomTaskService.java,8/c/8c0e3ec8e1b090aacf6351edcf093a726fa67b1a
+m
+=src/main/java/com/ail/mbo/storm/web/rest/KeycloakService.java,e/d/edd3e71a25bcb2a96417f0e27c9ff6399c83221d
+P
+ src/main/resources/keycloak.json,9/e/9e04b5109159b9b95f9a281f07785090d7417910
+^
+.src/main/resources/keycloak/keycloak-prod.json,8/5/85bc481957fdf46b1b535f41ce68c0e26bd1c2fb
+U
+%src/main/webapp/WEB-INF/keycloak.json,1/7/17801d810ea8fe83dcca32b72b7e406223ce2754
+]
+-src/main/resources/config/application-dev.yml,8/d/8d57f84fc8d26cc37e8606da67ebc4fbb0a774f3
+`
+0src/main/java/com/ail/mbo/storm/Application.java,6/1/61154da4cfea4ffd8fad4e048b04302edaaa1b07
+l
+<src/main/java/com/ail/mbo/storm/web/rest/HealthCheckApi.java,3/2/32a68972be9785bec8139f5d4ce5d2bfb3705ff4

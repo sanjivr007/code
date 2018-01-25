@@ -1,0 +1,186 @@
+package com.ail.notification.code.request;
+
+import java.util.Set;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.Valid;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.executable.ExecutableValidator;
+import javax.validation.metadata.BeanDescriptor;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+import org.springframework.validation.annotation.Validated;
+
+import com.ail.notification.code.enumaration.OperatingSystem;
+import com.ail.notification.code.enumaration.State;
+
+public class RecordRequestBody  {
+
+	private String deviceId;
+
+	private String platformToken;
+
+	private String firebaseToken;
+
+	private String userIdentifier;
+	
+	/*RecordRequestBody()
+	{
+		System.out.println(validate());
+	}*/
+
+	@NotNull
+	private String appVersion;
+
+	@NotNull
+	private OperatingSystem os;
+
+	@NotNull
+	private State loginState;
+
+	private boolean notificationPermission = true;
+
+	public String getDeviceId() {
+		return deviceId;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	public String getPlatformToken() {
+		return platformToken;
+	}
+
+	public void setPlatformToken(String platformToken) {
+		this.platformToken = platformToken;
+	}
+
+	public String getFirebaseToken() {
+		return firebaseToken;
+	}
+
+	public void setFirebaseToken(String firebaseToken) {
+		this.firebaseToken = firebaseToken;
+	}
+
+	public String getUserIdentifier() {
+		return userIdentifier;
+	}
+
+	public void setUserIdentifier(String userIdentifier) {
+		this.userIdentifier = userIdentifier;
+	}
+
+	public String getAppVersion() {
+		return appVersion;
+	}
+
+	public void setAppVersion(String appVersion) {
+		this.appVersion = appVersion;
+	}
+
+	public OperatingSystem getOs() {
+		return os;
+	}
+
+	public void setOs(OperatingSystem os) {
+		this.os = os;
+	}
+
+	public State getLoginState() {
+		return loginState;
+	}
+
+	public void setLoginState(State loginState) {
+		this.loginState = loginState;
+	}
+
+	public boolean isNotificationPermission() {
+		return notificationPermission;
+	}
+
+	public void setNotificationPermission(boolean notificationPermission) {
+		this.notificationPermission = notificationPermission;
+	}
+
+	
+	public boolean validate() {
+		boolean a= (this.loginState.equals("non_logged_in") || this.loginState.equals("logged_in"));
+		boolean b= this.os.equals("andriod") || this.os.equals("ios");
+		System.out.println(this.loginState);
+		System.out.println(this.os);
+		System.out.println(a+"----"+b);
+		return a && b;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((appVersion == null) ? 0 : appVersion.hashCode());
+		result = prime * result + ((deviceId == null) ? 0 : deviceId.hashCode());
+		result = prime * result + ((firebaseToken == null) ? 0 : firebaseToken.hashCode());
+		result = prime * result + ((loginState == null) ? 0 : loginState.hashCode());
+		result = prime * result + (notificationPermission ? 1231 : 1237);
+		result = prime * result + ((os == null) ? 0 : os.hashCode());
+		result = prime * result + ((platformToken == null) ? 0 : platformToken.hashCode());
+		result = prime * result + ((userIdentifier == null) ? 0 : userIdentifier.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		RecordRequestBody other = (RecordRequestBody) obj;
+		if (appVersion == null) {
+			if (other.appVersion != null)
+				return false;
+		} else if (!appVersion.equals(other.appVersion))
+			return false;
+		if (deviceId == null) {
+			if (other.deviceId != null)
+				return false;
+		} else if (!deviceId.equals(other.deviceId))
+			return false;
+		if (firebaseToken == null) {
+			if (other.firebaseToken != null)
+				return false;
+		} else if (!firebaseToken.equals(other.firebaseToken))
+			return false;
+		if (loginState != other.loginState)
+			return false;
+		if (notificationPermission != other.notificationPermission)
+			return false;
+		if (os != other.os)
+			return false;
+		if (platformToken == null) {
+			if (other.platformToken != null)
+				return false;
+		} else if (!platformToken.equals(other.platformToken))
+			return false;
+		if (userIdentifier == null) {
+			if (other.userIdentifier != null)
+				return false;
+		} else if (!userIdentifier.equals(other.userIdentifier))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "RecordRequestBody [deviceId=" + deviceId + ", platformToken=" + platformToken + ", firebaseToken="
+				+ firebaseToken + ", userIdentifier=" + userIdentifier + ", appVersion=" + appVersion + ", os=" + os
+				+ ", loginState=" + loginState + ", notificationPermission=" + notificationPermission + "]";
+	}
+
+
+	
+}

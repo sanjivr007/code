@@ -1,0 +1,23 @@
+
+osquid:S1118":Add a private constructor to hide the implicit public one.(Ããª‹8¹¼ø»ƒ,HûïRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,HüïRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(ãª½8¹¼ø»ƒ,HıïRMAJORZ
+CODE_SMELL
+r
+squid:S106;"9Replace this use of System.out or System.err by a logger.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,HşïRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,HÿïRMAJORZ
+CODE_SMELL
+Ğsquid:S1192"’Define a constant instead of duplicating this literal "Invalid number of arguments %d , please enter correct number of arguments i.e 1%n" 5 times.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,H€ğRCRITICALZ
+CODE_SMELL
+r
+squid:S106)"9Replace this use of System.out or System.err by a logger.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,HğRMAJORZ
+CODE_SMELL
+r
+squid:S1062"9Replace this use of System.out or System.err by a logger.(¥Ÿåùÿÿÿÿ8¹¼ø»ƒ,H‚ğRMAJORZ
+CODE_SMELL

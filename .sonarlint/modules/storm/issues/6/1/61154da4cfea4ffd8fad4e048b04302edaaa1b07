@@ -1,0 +1,6 @@
+
+Rsquid:S26292"$Invoke method(s) only conditionally.(Ì‘ÂH€÷RMAJORZ
+CODE_SMELL
+›squid:S11925"jDefine a constant instead of duplicating this literal "You have misconfigured your application! " 3 times.(šò‰ßH÷RCRITICALZ
+CODE_SMELL
+^squid:S1313L".Make this IP "127.0.0.1" address configurable.(Ì¨ H‚÷RMINORZVULNERABILITY

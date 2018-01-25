@@ -1,0 +1,5 @@
+package com.ail.notification.service;
+
+public class RecordService {
+
+}

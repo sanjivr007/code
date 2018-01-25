@@ -1,0 +1,25 @@
+
+‰squid:S00116"SRename this field "MAX_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ˆÃ¿8†“â,HƒÑRMINORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8†“â,HıĞRMAJORZ
+CODE_SMELL
+squid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(¹ó›È8†“â,HûĞRMINORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(µ’´“8†“â,H€ÑRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÈÿŞ”8†“â,HüĞRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8†“â,HÿĞRMAJORZ
+CODE_SMELL
+m
+squid:S106,"9Replace this use of System.out or System.err by a logger.(­‘éÛ8†“â,H‚ÑRMAJORZ
+CODE_SMELL
+r
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8†“â,HÑRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.( ºË8†“â,HşĞRMAJORZ
+CODE_SMELL

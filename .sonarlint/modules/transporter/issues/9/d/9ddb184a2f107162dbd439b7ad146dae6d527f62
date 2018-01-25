@@ -1,0 +1,5 @@
+
+†squid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(£²±ÏûÿÿÿÿH®ŽRMINORZ
+CODE_SMELL
+gsquid:S2696"6Make the enclosing method "static" or remove this set.(Æ£…èH¯ŽRCRITICALZ
+CODE_SMELL

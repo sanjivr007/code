@@ -1,0 +1,15 @@
+package com.ail.notification.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.ail.notification.domain.Record;
+
+public interface RecordRepository extends MongoRepository<Record, String> {
+	
+	Record findOneBydeviceId(String deviceId);
+	Record findOneById(String id);
+	List<Record> findByuserIdentifier(String id);
+
+}

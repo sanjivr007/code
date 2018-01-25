@@ -1,0 +1,29 @@
+
+Ysquid:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH•RMINORZVULNERABILITY
+w
+squid:S8994"BDo something with the "boolean" value returned by "setExecutable".(ñù”‡úÿÿÿÿH–RMINORZVULNERABILITY
+dsquid:S1135="2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH’RINFOZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"CRemove this unused import 'com.ail.transporter.code.aws.AWSClient'.(ÅÅ–ƒúÿÿÿÿH”RMINORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ß²íùÿÿÿÿHRMAJORZ
+CODE_SMELL
+˜squid:S1488"eImmediately return this expression instead of assigning it to the temporary variable "attachmentUrl".(ü¥¾ÀúÿÿÿÿH‘RMINORZ
+CODE_SMELL
+u
+squid:S8995"@Do something with the "boolean" value returned by "setWritable".(ö¤ìÔşÿÿÿÿH—RMINORZVULNERABILITY
+€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÆ®àH“RMINORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(’“¾“øÿÿÿÿHRMAJORZ
+CODE_SMELL
+o
+squid:S8996"@Do something with the "boolean" value returned by "setReadable".(Éö¥RH˜RMINORZVULNERABILITY
+wsquid:S3027("JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(ğÔH‹RMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(„ï²HRMAJORZ
+CODE_SMELL
+e
+squid:S106;"9Replace this use of System.out or System.err by a logger.(Š¨ônHRMAJORZ
+CODE_SMELL
+Ysquid:S10750"&Remove this hard-coded path-delimiter.(ºª±üÿÿÿÿHŒRMINORZ
+CODE_SMELL

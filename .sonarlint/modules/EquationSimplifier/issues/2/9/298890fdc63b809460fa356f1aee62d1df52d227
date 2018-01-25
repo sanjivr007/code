@@ -1,0 +1,15 @@
+
+…squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(òÄ×äùÿÿÿÿ8ÉÉÎ„,HÅöRMAJORZ
+CODE_SMELL
+m
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ˆÏúô8Ø‡öË„,HõõRMAJORZ
+CODE_SMELL
+vsquid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8¦ñÞË„,HáõRMINORZ
+CODE_SMELL
+`squid:S1148+"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ïåË„,HíõRMINORZVULNERABILITY
+rsquid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º8¦ñÞË„,HãõRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ž²úç8ïåË„,HéõRMAJORZ
+CODE_SMELL
+ksquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8¦ñÞË„,HâõRMINORZ
+CODE_SMELL

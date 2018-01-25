@@ -1,0 +1,12 @@
+
+ssquid:S2259"GA "NullPointerException" could be thrown; "inputline" is nullable here.(›³ÀÿÿÿÿÿH«İRMAJORZBUG
+]squid:S00108")Either remove or fill this block of code.(›³ÀÿÿÿÿÿH®İRMAJORZ
+CODE_SMELL
+f
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ÿµÀºH­İRMAJORZ
+CODE_SMELL
+f
+squid:S106,"9Replace this use of System.out or System.err by a logger.(¢ŸĞ‰H¯İRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(¾åÆ­8©Îõƒ,HÀİRMAJORZ
+CODE_SMELL

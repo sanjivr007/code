@@ -1,0 +1,112 @@
+package com.ail.notification.code.service;
+
+import java.util.Date;
+import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.springframework.stereotype.Service;
+
+import com.ail.notification.code.exceptions.ValidationException;
+import com.ail.notification.code.request.RecordRequestBody;
+import com.ail.notification.domain.Record;
+import com.ail.notification.repository.RecordRepository;
+import com.google.common.base.Strings;
+
+@Service
+public class RecordService {
+
+	private final Logger log = LoggerFactory.getLogger(RecordService.class);
+
+	private final RecordRepository recordRepository;
+
+	public RecordService(RecordRepository recordRepository) {
+
+		this.recordRepository = recordRepository;
+
+	}
+
+	public Record populateRecord(RecordRequestBody recordRequestBody) {
+
+		Record record = new Record();
+
+		Date now = new Date();
+		try {
+			if (null == recordRequestBody.getDeviceId() || recordRequestBody.getDeviceId().isEmpty()) {
+				record = createNewRecordIfNODeviceId(recordRequestBody, now);
+			} else {
+				record = recordRepository.findOneBydeviceId(recordRequestBody.getDeviceId());
+				if (null == record) {
+					record = addprimaryDetailsInRecordIfDeviceIdDoesNotExixts(recordRequestBody, now);
+				}
+				record = addSecondaryDetailsIfKeyNotNull(record, recordRequestBody);
+				record.setModifiedDate(now);
+			}
+
+			log.info("Created Information for User: {}", record);
+			recordRepository.save(record);
+		} catch (Exception ex) {
+
+			log.info("Excption Occured :: ", ex);
+			throw new ValidationException("data missing issue");
+		}
+
+		return record;
+
+	}
+
+	private Record addSecondaryDetailsIfKeyNotNull(Record record, RecordRequestBody recordRequestBody) {
+		if (!Strings.isNullOrEmpty(recordRequestBody.getPlatformToken()))
+			record.setPlatformToken(recordRequestBody.getPlatformToken());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getFirebaseToken()))
+			record.setFirebaseToken(recordRequestBody.getFirebaseToken());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getUserIdentifier()))
+			record.setUserIdentifier(recordRequestBody.getUserIdentifier());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getAppVersion()))
+			record.setAppVersion(recordRequestBody.getAppVersion());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getOs()))
+			record.setOs(recordRequestBody.getOs());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getLoginState()))
+			record.setLoginState(recordRequestBody.getLoginState());
+		if (!Strings.isNullOrEmpty(recordRequestBody.getModule()))
+			record.setModule(recordRequestBody.getModule());
+		if (null != recordRequestBody.getNotificationPermission())
+			record.setNotificationPermission(recordRequestBody.getNotificationPermission());
+
+		return record;
+
+	}
+
+	private Record createNewRecordIfNODeviceId(RecordRequestBody recordRequestBody, Date now) {
+		Record record = new Record();
+		record.setId(UUID.randomUUID().toString());
+		record.setDeviceId(UUID.randomUUID().toString());
+		record.setPlatformToken(recordRequestBody.getPlatformToken());
+		record.setFirebaseToken(recordRequestBody.getFirebaseToken());
+		record.setUserIdentifier(recordRequestBody.getUserIdentifier());
+		record.setAppVersion(recordRequestBody.getAppVersion());
+		record.setOs(recordRequestBody.getOs());
+		record.setLoginState(recordRequestBody.getLoginState());
+		record.setCreatedDate(now);
+		record.setModifiedDate(now);
+		record.setNotificationPermission(true);
+		if (null != recordRequestBody.getNotificationPermission())
+			record.setNotificationPermission(recordRequestBody.getNotificationPermission());
+		else
+			record.setNotificationPermission(true);
+		return record;
+
+	}
+
+	private Record addprimaryDetailsInRecordIfDeviceIdDoesNotExixts(RecordRequestBody recordRequestBody, Date now) {
+		Record record = new Record();
+		record.setId(UUID.randomUUID().toString());
+		record.setDeviceId(recordRequestBody.getDeviceId());
+		record.setNotificationPermission(true);
+		record.setCreatedDate(now);
+		return record;
+
+	}
+
+}

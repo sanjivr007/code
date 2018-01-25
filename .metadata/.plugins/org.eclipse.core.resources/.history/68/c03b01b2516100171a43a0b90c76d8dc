@@ -1,0 +1,97 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+    profiles:
+        active: dev
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false # we use Grunt + BrowserSync for livereload
+    datasource:
+        driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+        url: jdbc:mysql://avengers02.cnkclpncauoh.us-east-1.rds.amazonaws.com:3306/storm?useUnicode=true&characterEncoding=utf8
+        name:
+        username: stormdevadmin
+        password: 12345678
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+        database: MYSQL
+        show_sql: true
+        properties:
+            hibernate.cache.use_second_level_cache: false
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+    mail:
+        host: localhost
+    messages:
+        cache-seconds: 1
+    thymeleaf:
+        cache: false
+
+liquibase:
+    contexts: dev
+
+multipart:
+    enabled: true
+    maxFileSize: 500Mb
+    maxRequestSize: 500Mb
+
+server:
+    port: 8080
+
+services:
+    narad: https://kong-qa.ailiens.com:8443/narad
+    oms:  https://kong-qa.ailiens.com:8443/oms
+    keycloak:
+        url: https://keycloak-qa.ailiens.com/auth/realms/AILSecureQA/tokens/grants/access
+        username: defenders-node
+        password: wN2nTYP((_Eaf_"N
+        clientId: DefendersQA
+    aws:
+        awsClientAccessKey:  "AKIAJVP6YRS5FNDZ7CFA"
+        awsClientSecretKey:  "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"
+        awsBucketName:  "ail.mbo.storm.tasks"
+        awsExcelBucketName:  "ail.mbo.storm.uploadedexcel"
+        awsFileUploadDirName:  "attachments-dev"
+        awsExcelFileUploadDirName:  "Excel-uploaded-dev"
+        awsUrlAppend:  https://s3-ap-southeast-1.amazonaws.com/
+
+
+variables:
+     naradTemplate: Storm_NEFT
+     naradTemplateCANCELLATION: Strom_NEFT_CANCELLATION
+
+# ===================================================================
+# JHipster specific properties
+# ===================================================================
+
+jhipster:
+    datasource: # JHipster-specific configuration, in addition to the standard spring.datasource properties
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+    mail: # specific JHipster mail property, for standard properties see MailProperties
+        from: storm@localhost
+    metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
+        jmx.enabled: true
+        spark:
+            enabled: false
+            host: localhost
+            port: 9999
+        graphite:
+            enabled: true
+            host: scrolls.ailiens.com
+            port: 2003
+            prefix: storm-dev

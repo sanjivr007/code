@@ -1,0 +1,11 @@
+
+Zsquid:S1068!"'Remove this unused "log" private field.(¤®ã‹ıÿÿÿÿHŒ±RMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(ƒ’³H±RMAJORZ
+CODE_SMELL
+|squid:S00112:"FDefine and throw a dedicated exception instead of using a generic one.(÷€Û8¦–¹ÿæ+H±RMAJORZ
+CODE_SMELL
+»%squid:RedundantThrowsDeclarationCheck:"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(÷€Û8¦–¹ÿæ+H±RMINORZ
+CODE_SMELL
+“squid:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨ó»‘ÿÿÿÿÿ8¦–¹ÿæ+H±RMINORZ
+CODE_SMELL

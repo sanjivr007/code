@@ -1,0 +1,26 @@
+package com.ail.notification.code.request;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+public class RecordRequestValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> param) {
+		// TODO Auto-generated method stub
+		return RecordRequestBody.class.equals(param);
+	}
+
+	@Override
+	public void validate(Object obj, Errors errors) {
+		RecordRequestBody recordRequestBody = (RecordRequestBody)obj;
+		
+		System.out.println(recordRequestBody.validate()+"---------------");
+		if(!recordRequestBody.validate())
+			errors.reject(null,"Validation Failed");
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

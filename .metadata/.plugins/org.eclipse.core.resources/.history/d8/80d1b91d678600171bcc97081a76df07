@@ -1,0 +1,153 @@
+package com.ail.transporter.code.service;
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.inject.Inject;
+
+import org.json.JSONException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.ail.transporter.code.exception.MessageBodyNullException;
+import com.ail.transporter.code.exception.TemplateNotFoundException;
+import com.ail.transporter.code.exception.WrongTemplateDataException;
+import com.ail.transporter.code.request.ProducerRequest;
+import com.ail.transporter.code.response.ProducerResponse;
+import com.ail.transporter.code.service.worker.ServiceWorker;
+import com.ail.transporter.domain.Templates;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+@Service
+public class ValidationService {
+
+	private final Logger log = LoggerFactory.getLogger(ValidationService.class);
+
+	@Inject
+	private ServiceWorker serviceWorker;
+    
+		
+	private Templates template;
+
+	private String responseMessage = "";
+
+	public ProducerResponse validateAndSetMessageData(ProducerRequest producerRequest)
+			throws JSONException, JsonProcessingException {
+		ProducerResponse producerResponse = new ProducerResponse();
+
+		log.info("Template name ---------" + producerRequest.getTemplateId()+"--");
+		
+		
+		producerResponse.setTemplateValidated(validateTemplateId(producerRequest.getTemplateId()));
+		
+		// todo validate template
+		// if (null != template) {
+		producerResponse.setDataValidated(validateMessageDataStructure(producerRequest.getData()));
+
+		producerResponse.setResponseMessage(this.responseMessage);
+		producerResponse.setMessageType(template.getType().name());
+		producerResponse.setTemplateStatus(template.getStatus().name());
+		
+		/*
+		 * }else { producerResponse.setDataValidated(false);
+		 *
+		 * producerResponse.setResponseMessage(this.responseMessage);
+		 * producerResponse.setMessageType("Wrong template ");
+		 *
+		 * }
+		 */
+
+		return producerResponse;
+	}
+
+	public ProducerResponse validateOnlyMetaData(ProducerRequest producerRequest)
+			throws JsonProcessingException, JSONException {
+		// todo message notnull
+		ProducerResponse producerResponse = new ProducerResponse();
+
+		if (null == producerRequest.getMessage()) {
+			 throw new MessageBodyNullException("Message body can not be null");
+		}
+
+		producerResponse.setTemplateValidated(true);
+
+		if (producerRequest.getData() != null && producerRequest.getData().containsKey("data")) {
+			producerResponse.setDataValidated(true);
+		}
+		producerResponse.setResponseMessage(this.responseMessage);
+		producerResponse.setMessageType("GENERIC_MESSAGE");
+
+		return producerResponse;
+	}
+
+	public boolean validateTemplateId(String templateId) {
+
+		boolean response = true;
+		template = serviceWorker.getTemplate(templateId);
+
+		if (null == template) {
+			log.info("Template not found :-" + templateId+"--");
+			throw new TemplateNotFoundException("template name doesnot exists ");
+		}
+
+		return response;
+
+	}
+
+	public boolean validateMessageDataStructure(Map<String, String> msgString) {
+
+		// boolean response = true;
+		Matcher m = null;
+		ArrayList<String> list = new ArrayList<String>();
+		if (msgString == null) {
+			return false;
+		}
+		else{
+			for(Map.Entry<String,String> entry : msgString.entrySet()){
+				list.add(entry.getKey());
+				
+			}
+		}
+
+		Pattern p = Pattern.compile("\\{(.*?)\\}");
+		// if (null != template) {
+		m = p.matcher(template.getMessage());
+
+		ArrayList<String> variables = new ArrayList<String>();
+
+		while (m.find()) {
+			variables.add(m.group(1));
+
+		}
+
+		/*for (Map.Entry<String, String> entry : msgString.entrySet()) {
+
+			if (!variables.contains(entry.getKey())) {
+				log.info("Wrong Template data " + msgString.toString()+"--");
+				throw new WrongTemplateDataException("wrong template Data");
+				// return response && false;
+			}*/
+		for( int i=0;i<variables.size();i++){
+			if(!list.contains(variables.get(i))){
+				log.info("Wrong Template data" + msgString.toString()+"----"+"  given list"+list+"   template Variables"+variables);
+				throw new WrongTemplateDataException("Wrong template Data");
+				//return response && false;
+			}
+
+		}
+		// } else {
+
+		// return false;
+		// }
+
+		return true;
+
+		// return variables.stream().filter(x ->
+		// !msgString.containsKey(x)).count() == 0;
+
+	}
+
+}
