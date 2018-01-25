@@ -1,9 +1,0 @@
-
-Šsquid:S2629$"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(±îÍóH¤ÖRMAJORZ
-CODE_SMELL
-squid:S2629)"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(‚È“¢ùÿÿÿÿH¥ÖRMAJORZ
-CODE_SMELL
-jsquid:S2629."7Use the built-in formatting to construct this argument.(ö“õùÿÿÿÿH¦ÖRMAJORZ
-CODE_SMELL
-€squid:UselessImportCheck"ERemove this unused import 'org.springframework.core.env.Environment'.(¹‡¨¹H§ÖRMINORZ
-CODE_SMELL

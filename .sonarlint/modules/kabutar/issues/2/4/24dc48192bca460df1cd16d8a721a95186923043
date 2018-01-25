@@ -1,9 +1,0 @@
-
-squid:UselessImportCheck"?Remove this unused import 'com.ailiens.common.InboundMessages'.(¸Î‡’8ñì+H¹¶RMINORZ
-CODE_SMELL
-†squid:UselessImportCheck"?Remove this unused import 'com.ailiens.common.MsgEventHandler'.(¬ß‘êşÿÿÿÿ8‚ïŸ»î+H½¶RMINORZ
-CODE_SMELL
-‹squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ù« ÅùÿÿÿÿHº¶RMINORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ª«øë8ÿ½€öî+HÍ¶RMAJORZ
-CODE_SMELL

@@ -5,7 +5,91 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-01-24T15:28:34Z</updated>
+  <updated>2018-01-24T22:47:47Z</updated>
+  <entry>
+    <title>Spring Cloud Data Flow 1.3.0.RC1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/01/24/spring-cloud-data-flow-1-3-0-rc1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2018-01-24:3145</id>
+    <updated>2018-01-24T22:47:47Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;We are pleased to announce the 1.3.0.RC1 release of the Spring Cloud Data Flow and its associated ecosystem of projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Follow the Getting Started guides for &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RC1/reference/htmlsingle/#getting-started"&gt;Local Server&lt;/a&gt;,
+&lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-cloudfoundry/docs/1.3.0.RC1/reference/htmlsingle/#getting-started"&gt;Cloud Foundry&lt;/a&gt;, and
+&lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-kubernetes/docs/1.3.0.RC1/reference/htmlsingle/#kubernetes-getting-started"&gt;Kubernetes&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="release-highlights" class="sect0"&gt;&lt;a class="anchor" href="#release-highlights"&gt;&lt;/a&gt;Release Highlights&lt;/h1&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="feature-toggle-for-skipper"&gt;&lt;a class="anchor" href="#feature-toggle-for-skipper"&gt;&lt;/a&gt;Feature toggle for Skipper&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To simplify the overall experience of opting into using &lt;a href="https://cloud.spring.io/spring-cloud-skipper/"&gt;Skipper&lt;/a&gt; to deploy streams, a feature toggle provides you the ability to switch between skipper mode and the previous 'classic' mode.  The feature toggle is used in both the Shell and the Server.  The default value is to use the 'classic' non-skipper mode.  To enable skipper mode, pass in the following Spring Boot options.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;java -jar spring-cloud-dataflow-server-local-1.3.0.RC1.jar  \
+  --spring.cloud.dataflow.features.skipper-enabled=true
+
+java -jar spring-cloud-dataflow-shell-1.3.0.RC1.jar --dataflow.mode=skipper&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This also allowed us to remove &lt;code&gt;stream skipper&lt;/code&gt; commands introduced in 1.3 M3 and collapse skipper behavior into &lt;code&gt;stream&lt;/code&gt; commands.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="stream-deployment-properties-are-persisted"&gt;&lt;a class="anchor" href="#stream-deployment-properties-are-persisted"&gt;&lt;/a&gt;Stream Deployment properties are persisted&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can retrieve the deployment properties using the command &lt;code&gt;stream info&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="versioned-app-registry"&gt;&lt;a class="anchor" href="#versioned-app-registry"&gt;&lt;/a&gt;Versioned App Registry&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;When in Skipper mode, multiple versions of a stream application can be registered.  A default version is used when deploying the stream.  You can set the default version using the new command &lt;code&gt;app default&lt;/code&gt;.  When upgrading an application version in a stream, you must first register it in Data Flow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="dashboard-improvements"&gt;&lt;a class="anchor" href="#dashboard-improvements"&gt;&lt;/a&gt;Dashboard Improvements&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can restart and stop an already running batch-job as well as get more information about a stream, such as each application version and the application/deployment properties.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="javadsl"&gt;&lt;a class="anchor" href="#javadsl"&gt;&lt;/a&gt;JavaDSL&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Added deployment property builders to help avoid typos when setting commonly used deployment properties.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="local-debugging"&gt;&lt;a class="anchor" href="#local-debugging"&gt;&lt;/a&gt;Local Debugging&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The local server lets you deploy task and stream applications in debug mode so that you can attache a debugger.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Please try it out, share your feedback, and consider contributing to the project!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data Ingalls SR10 and Kay SR3 released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/01/24/spring-data-ingalls-sr10-and-kay-sr3-released" />
@@ -1317,35 +1401,5 @@ dependencies {&#xD;
     <id>tag:spring.io,2017-12-12:3126</id>
     <updated>2017-12-12T13:06:46Z</updated>
     <content type="html">&lt;p&gt;I am pleased to announce that &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"&gt;Gradle dependency management plugin&lt;/a&gt; 1.0.4.RELEASE is now available from Maven Central, Bintray, and the &lt;a href="https://plugins.gradle.org/plugin/io.spring.dependency-management"&gt;Gradle Plugin Portal&lt;/a&gt;. This maintenance release fixes a &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin/milestone/24?closed=1"&gt;handful of issues&lt;/a&gt; and is a recommended upgrade for all users of the plugin.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - December 5th, 2017</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/12/06/this-week-in-spring-december-5th-2017" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2017-12-06:3125</id>
-    <updated>2017-12-06T02:26:07Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans and welcome to &lt;em&gt;This Week in Spring&lt;/em&gt; from the premier JVM-language event SpringOne Platform 2017! There is a &lt;em&gt;massive&lt;/em&gt; amount of stuff to cover, especially in light of SpringOne Platform, so let&amp;rsquo;s get to it!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Cloud co-founder &lt;a href="https://spring.io/blog/2017/12/05/spring-cloud-finchley-m5-released"&gt;Spencer Gibb just announced Spring Cloud Finchley M5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Tools lead Martin Lippert &lt;a href="https://spring.io/blog/2017/12/04/spring-tools-4-public-beta-released"&gt;just announced the first previews of Spring Tool Suite 4&lt;/a&gt; and the new IDE-agnostic language servers. Also, I did a special (and early!) &lt;a href="https://spring.io/blog/2017/12/04/spring-tips-spring-tool-suite-4"&gt;Spring Tip that looked at these topics&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Spring Batch lead Michael Minella &lt;a href="https://spring.io/blog/2017/12/04/spring-batch-4-0-0-release-is-now-available"&gt;just announced Spring Batch 4.0.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Dr. Dave Syer has updated the &lt;a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/"&gt;Spring Security and Angular_&lt;/a&gt; and &lt;a href="https://spring.io/guides/tutorials/spring-boot-oauth2/"&gt;Spring Boot and OAuth tutorials&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring ninja Greg Turnquist just &lt;a href="https://spring.io/blog/2017/12/03/spring-session-core-mongodb-geode-2-0-0-rc2-released"&gt;announced Spring Session updates for Core, MongoDB, and Apache Geode&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Spring Cloud Data Flow lead and co-founder &lt;a href="https://spring.io/blog/2017/12/01/spring-cloud-data-flow-for-cloud-foundry-1-3-0-m3-released"&gt;Dr. Mark Pollack just announced Spring Cloud Data Flow 1.3.0.M3&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Spring Integration lead Gary Russell just &lt;a href="https://spring.io/blog/2017/12/01/spring-for-apache-kafka-2-1-0-release-and-1-3-2-2-0-2-available"&gt;announced Spring for Apache Kafka 2.1.0 and 1.3.2, and 2.0.2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Boot co-founder and lead &lt;a href="https://spring.io/blog/2017/11/30/spring-boot-2-0-0-m7-available-now"&gt;Phil Webb just announced Spring Boot 2.0.M7&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring IO Platform &lt;a href="https://spring.io/blog/2017/11/29/spring-io-platform-brussels-sr6"&gt;lead Andy Wilkinson just announced Spring IO Platform Brussels SR6&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration ninja Artem Bilan &lt;a href="https://spring.io/blog/2017/11/29/spring-integration-5-0-ga-available"&gt;just announced Spring Integration 5.0.GA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Last week, I looked at the &lt;a href="https://spring.io/blog/2017/11/29/spring-tips-spring-cloud-gateway"&gt;new Spring Cloud Gateway project in a Spring Tips installment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration ninja just released &lt;a href="https://spring.io/blog/2017/11/28/spring-amqp-1-7-5-and-2-0-1-available"&gt;Spring AMQP 1.7.5 and 2.0.1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;not one to rest on his laurels, &lt;a href="https://spring.io/blog/2017/11/28/spring-rest-docs-2-0-0-release"&gt;Spring REST Docs Andy Wilkinson just announced Spring REST Docs 2.0.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Security lead &lt;a href="https://spring.io/blog/2017/11/28/spring-security-5-0-0-release-released"&gt;Rob Winch just announced Spring Security 5.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring REST Docs lead &lt;a href="https://spring.io/blog/2017/11/28/spring-rest-docs-1-2-3-release"&gt;Andy Wilkinson &lt;em&gt;also&lt;/em&gt; announced Spring REST Docs 1.2.3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Boot ninja &lt;a href="https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now"&gt;Stéphane Nicoll just announced Spring Boot 1.5.9&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data ninja Mark Paluch pulled together an amazing look at &lt;a href="https://spring.io/blog/2017/11/28/binding-applications-to-hashicorp-s-vault-with-spring-in-cloud-foundry"&gt;binding applications to Hashicorp&amp;rsquo;s Vault with Spring in Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

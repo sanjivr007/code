@@ -1,25 +1,0 @@
-
-ssquid:S1226)">Introduce a new variable instead of reusing the parameter "b".(›Ô©Ä8ê¼•‰‚,HÈÒRMINORZ
-CODE_SMELL
-|squid:S1226."BIntroduce a new variable instead of reusing the parameter "list2".(¶øêşúÿÿÿÿ8ê¼•‰‚,HÉÒRMINORZ
-CODE_SMELL
-{squid:S1226"AIntroduce a new variable instead of reusing the parameter "tail".(É•šÂüÿÿÿÿ8¹¯ï,HÁÒRMINORZ
-CODE_SMELL
-{squid:S1226"AIntroduce a new variable instead of reusing the parameter "tail".(×¡ó”úÿÿÿÿ8¹¯ï,HÀÒRMINORZ
-CODE_SMELL
-tsquid:S1118":Add a private constructor to hide the implicit public one.(¡ÿøÔşÿÿÿÿ8¹¯ï,HÂÒRMAJORZ
-CODE_SMELL
-†squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(îõƒH¼ÒRMINORZ
-CODE_SMELL
-isquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8¹¯ï,H¾ÒRMINORZ
-CODE_SMELL
-„squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó°ñ£8¹¯ï,HÃÒRMINORZ
-CODE_SMELL
-‡squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÃö’8¹¯ï,HÅÒRMINORZ
-CODE_SMELL
-xsquid:S1226$">Introduce a new variable instead of reusing the parameter "a".(Éöşïûÿÿÿÿ8ÿ¤ï,HÆÒRMINORZ
-CODE_SMELL
-vsquid:S1226"AIntroduce a new variable instead of reusing the parameter "head".(ÓÿÙ«8¹¯ï,H¿ÒRMINORZ
-CODE_SMELL
-squid:UselessImportCheck"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ÈØŸ‰‚,HÌÒRMINORZ
-CODE_SMELL

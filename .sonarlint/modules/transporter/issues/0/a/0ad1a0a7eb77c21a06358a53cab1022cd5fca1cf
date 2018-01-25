@@ -1,13 +1,0 @@
-
-Šsquid:S2629*"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ÚñÎÅH†RMAJORZ
-CODE_SMELL
-esquid:S2629Q"7Use the built-in formatting to construct this argument.(¢»†÷H‡RMAJORZ
-CODE_SMELL
-Œsquid:S2293i"YReplace the type specification in this constructor call with the diamond operator ("<>").(äË½òÿÿÿÿÿHˆRMINORZ
-CODE_SMELL
-‡squid:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(œœÕ¼H‰RMINORZ
-CODE_SMELL
-–squid:S2629z"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ê½›Ğıÿÿÿÿ8¢¥š¸ã+HŠRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(ÎöÖ8¢¥š¸ã+H‹RMAJORZ
-CODE_SMELL

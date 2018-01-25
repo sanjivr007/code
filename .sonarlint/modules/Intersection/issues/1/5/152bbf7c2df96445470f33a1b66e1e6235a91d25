@@ -1,7 +1,0 @@
-
-Šsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "flag".(™ÄíÊH»ÓRMINORZ
-CODE_SMELL
-msquid:S1118":Add a private constructor to hide the implicit public one.(´Ž©¾ùÿÿÿÿH¼ÓRMAJORZ
-CODE_SMELL
-…squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¾¡ö+H½ÓRMINORZ
-CODE_SMELL

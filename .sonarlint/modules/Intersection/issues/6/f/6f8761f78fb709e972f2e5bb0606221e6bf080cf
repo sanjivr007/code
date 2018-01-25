@@ -1,24 +1,0 @@
-
-{squid:S2259""OA "NullPointerException" could be thrown; "intersectedValues" is nullable here.(…ÉÕáıÿÿÿÿH¸ÖRMAJORZBUG
-|squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(õ¯¨ÅHÅÖRMINORZ
-CODE_SMELL
-xsquid:S1854"ERemove this useless assignment to local variable "intersectedValues".(Ê®‘üûÿÿÿÿHÆÖRMAJORZ
-CODE_SMELL
-Ysquid:S1481"&Remove this unused "a" local variable.(ÌõÏ¿ùÿÿÿÿHÇÖRMINORZ
-CODE_SMELL
-esquid:S1197	"8Move the array designator from the variable to the type.(ìúâHÈÖRMINORZ
-CODE_SMELL
-xsquid:S1854"ERemove this useless assignment to local variable "intersectedValues".(ü§ÒÀùÿÿÿÿHÉÖRMAJORZ
-CODE_SMELL
-dsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHÊÖRINFOZ
-CODE_SMELL
-isquid:S1481"6Remove this unused "intersectedValues" local variable.(ïªÈøÿÿÿÿHËÖRMINORZ
-CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(ë„ÇøÿÿÿÿHÌÖRMINORZ
-CODE_SMELL
-…squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¾¡ö+HÍÖRMINORZ
-CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿHÎÖRMINORZ
-CODE_SMELL
-hsquid:S1854"5Remove this useless assignment to local variable "a".(ÌõÏ¿ùÿÿÿÿHÏÖRMAJORZ
-CODE_SMELL

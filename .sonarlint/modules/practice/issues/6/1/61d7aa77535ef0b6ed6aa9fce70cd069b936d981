@@ -1,18 +1,0 @@
-
-]squid:S11255"(Remove the literal "true" boolean value.(ù¹Í8Ü³ô»,HçÜRMINORZ
-CODE_SMELL
-r
-squid:S1064"9Replace this use of System.out or System.err by a logger.(æ»¤ùûÿÿÿÿ8Ûç÷»,HèÜRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(å¼’@8ùãÏ¹,HéÜRMAJORZ
-CODE_SMELL
-r
-squid:S1066"9Replace this use of System.out or System.err by a logger.(ú¿‡Óúÿÿÿÿ8Ó¹Ùº,HêÜRMAJORZ
-CODE_SMELL
-msquid:S1197S"8Move the array designator from the variable to the type.(ù‡Øƒ8ëÆ¹,HëÜRMINORZ
-CODE_SMELL
-m
-squid:S106G"9Replace this use of System.out or System.err by a logger.(ÍÈ¤ÿ8¯ÒÌ¼,HìÜRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(·å™é8¿Öß¼,HíÜRMAJORZ
-CODE_SMELL

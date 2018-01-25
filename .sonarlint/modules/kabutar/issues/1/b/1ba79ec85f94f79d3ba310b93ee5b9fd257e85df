@@ -1,6 +1,0 @@
-
-psquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»ÚýÿÿÿÿHÍ°RMINORZ
-CODE_SMELL
-Ÿ"squid:ClassVariableVisibilityCheck"RMake client a static final constant or non-public and provide accessors if needed.(ÒêŠ—þÿÿÿÿHÌ°RMINORZVULNERABILITY
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(çÇæýÿÿÿÿ8¥ãµ¼ã+HÖ°RMAJORZ
-CODE_SMELL

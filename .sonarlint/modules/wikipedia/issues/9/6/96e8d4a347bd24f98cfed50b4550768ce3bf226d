@@ -1,7 +1,0 @@
-
-fsquid:S1197"8Move the array designator from the variable to the type.(‚ÔóóHÅôRMINORZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íæî¨HÆôRMINORZ
-CODE_SMELL
-‹squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ìéÍžÿÿÿÿÿHÇôRMINORZ
-CODE_SMELL

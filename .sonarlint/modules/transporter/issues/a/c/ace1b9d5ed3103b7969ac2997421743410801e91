@@ -1,7 +1,0 @@
-
-Åsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ï†¨úH·çRMINORZ
-CODE_SMELL
-âsquid:S1450"[Remove the "cacheManager" field and declare it as a local variable in the relevant methods.(ãâ˜ÚH‚çRMINORZ
-CODE_SMELL
-ksquid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ÏñÌ‘H„çRMINORZ
-CODE_SMELL

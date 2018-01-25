@@ -1,17 +1,0 @@
-
-…squid:S00116"QRename this field "Length" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£š®£ÿÿÿÿÿH´İRMINORZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬›“„H¶İRMINORZ
-CODE_SMELL
-Usquid:S11850"(Remove this method to simply inherit it.(™”” H²İRMINORZ
-CODE_SMELL
-ƒsquid:S00116"ORename this field "Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÁª“ûÿÿÿÿH³İRMINORZ
-CODE_SMELL
-„squid:S00116"PRename this field "Value" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÊÃÿÿÿÿÿHµİRMINORZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬›“„H·İRMINORZ
-CODE_SMELL
-‚squid:S29750"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(™”” H±İRBLOCKERZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬›“„H¸İRMINORZ
-CODE_SMELL

@@ -1,32 +1,0 @@
-
-jsquid:S26298"7Use the built-in formatting to construct this argument.(ÖèÍÎúÿÿÿÿHæ°RMAJORZ
-CODE_SMELL
-~squid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(Í½…»üÿÿÿÿHç°RMAJORZ
-CODE_SMELL
-k
-squid:S899R";Do something with the "boolean" value returned by "delete".(íÔˆ¢Hè°RMINORZVULNERABILITY
-Osquid:S2131+"Use "Long.toString" instead.(ùŠÂóûÿÿÿÿHé°RMAJORZ
-CODE_SMELL
-qsquid:S2629E"7Use the built-in formatting to construct this argument.(’÷—üÿÿÿÿ8ûÊ³êâ+Hê°RMAJORZ
-CODE_SMELL
-esquid:S2629;"7Use the built-in formatting to construct this argument.(¢æ„æHë°RMAJORZ
-CODE_SMELL
-f
-squid:S106`"9Replace this use of System.out or System.err by a logger.(ÆÂ‚ŞHì°RMAJORZ
-CODE_SMELL
-~squid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(Ù»âÁüÿÿÿÿHí°RMAJORZ
-CODE_SMELL
-squid:S18580"L"unique_id" is already a string, there's no need to call "toString()" on it.(„ÎûÿÿÿÿHî°RMINORZ
-CODE_SMELL
-ksquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒHï°RMINORZ
-CODE_SMELL
-ƒsquid:S3776!"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(òŒ÷²Hğ°RCRITICALZ
-CODE_SMELL
-€squid:S00117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¸µˆHñ°RMINORZ
-CODE_SMELL
-ksquid:UselessImportCheck	"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿHò°RMINORZ
-CODE_SMELL
-osquid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓHó°RMINORZ
-CODE_SMELL
-p
-squid:S899Q";Do something with the "boolean" value returned by "delete".(¯œãúıÿÿÿÿHô°RMINORZVULNERABILITY

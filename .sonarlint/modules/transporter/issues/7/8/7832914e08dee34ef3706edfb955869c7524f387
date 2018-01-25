@@ -1,7 +1,0 @@
-
-³%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(´Þâ`H¾¶RMINORZ
-CODE_SMELL
-tsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(´Þâ`H¿¶RMAJORZ
-CODE_SMELL
-†squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¶£¡ÂHÀ¶RMINORZ
-CODE_SMELL

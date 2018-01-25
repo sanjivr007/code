@@ -1,9 +1,0 @@
-
-Ysquid:S1068	"&Remove this unused "id" private field.(ôç¼ÓşÿÿÿÿHŸêRMAJORZ
-CODE_SMELL
-\squid:S1068
-")Remove this unused "level" private field.(ÂÎ÷øÿÿÿÿH êRMAJORZ
-CODE_SMELL
-Zsquid:S1068",Remove this unused "occupied" private field.(“Á¶šH¡êRMAJORZ
-CODE_SMELL
-…squid:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ÄõáˆÿÿÿÿÿH¢êRMINORZBUG

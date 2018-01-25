@@ -1,7 +1,0 @@
-
-dsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHßRINFOZ
-CODE_SMELL
-†squid:UselessImportCheck"KRemove this unused import 'com.ail.transporter.domain.util.RequestLogUtil'.(©È°HàRMINORZ
-CODE_SMELL
-“squid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "template".(ªĞËçûÿÿÿÿHŞRMINORZ
-CODE_SMELL

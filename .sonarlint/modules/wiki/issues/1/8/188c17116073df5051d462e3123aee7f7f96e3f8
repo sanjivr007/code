@@ -1,14 +1,0 @@
-
-[squid:S1170
-"!Make this final field static too.(¬ «áıÿÿÿÿ8¤ÅŠ„,H©ôRMINORZ
-CODE_SMELL
-r
-squid:S106,"9Replace this use of System.out or System.err by a logger.(„õËøÿÿÿÿÿ8ì”“Š„,H½ôRMAJORZ
-CODE_SMELL
-msquid:S1197&"8Move the array designator from the variable to the type.(ğËå€8ì”“Š„,H¼ôRMINORZ
-CODE_SMELL
-msquid:S1197K"8Move the array designator from the variable to the type.(ñ¡ÊŞ8°ùİŠ„,H»ôRMINORZ
-CODE_SMELL
-“squid:S00116
-"XRename this field "NoOfQuestions" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ «áıÿÿÿÿ8¤ÅŠ„,HªôRMINORZ
-CODE_SMELL

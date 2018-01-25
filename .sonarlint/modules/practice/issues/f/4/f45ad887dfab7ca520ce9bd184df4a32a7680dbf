@@ -1,18 +1,0 @@
-
-r
-squid:S106 "9Replace this use of System.out or System.err by a logger.(Ş•ıÿÿÿÿ8ß¤Øé,HòÑRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(¿­ˆø8˜áÄé,HìÑRMAJORZ
-CODE_SMELL
-r
-squid:S1061"9Replace this use of System.out or System.err by a logger.(Ş•ıÿÿÿÿ8ß¤Øé,HğÑRMAJORZ
-CODE_SMELL
-Šsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Çµí‘8è­äé,HûÑRCRITICALZ
-CODE_SMELL
-r
-squid:S106'"9Replace this use of System.out or System.err by a logger.(Ş•ıÿÿÿÿ8­€ôé,H‹ÒRMAJORZ
-CODE_SMELL
-r
-squid:S106%"9Replace this use of System.out or System.err by a logger.(’‹úÿÿÿÿ8ß¤Øé,HñÑRMAJORZ
-CODE_SMELL
-ssquid:S2259"GA "NullPointerException" could be thrown; "inputline" is nullable here.(›³ÀÿÿÿÿÿHÕÑRMAJORZBUG

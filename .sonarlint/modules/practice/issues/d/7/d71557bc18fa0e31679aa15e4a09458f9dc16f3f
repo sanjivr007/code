@@ -1,22 +1,0 @@
-
-wsquid:S1226+"BIntroduce a new variable instead of reusing the parameter "start".(Ä…¦Û8®šß°‚,HðÓRMINORZ
-CODE_SMELL
-`squid:S1481?"+Remove this unused "array1" local variable.(¿Â«è8¡˜å°‚,HõÓRMINORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(‹Ò»€8Ñ×ã°‚,HóÓRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(ÛÉó´8¨·„°‚,HîÓRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(ÜÓ‚¯8³²ò¯‚,HíÓRMAJORZ
-CODE_SMELL
-osquid:S1854?":Remove this useless assignment to local variable "array1".(¿Â«è8¡˜å°‚,HöÓRMAJORZ
-CODE_SMELL
-‹squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ðý¸ßøÿÿÿÿHÓÒRMINORZ
-CODE_SMELL
-ksquid:S1197:"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿHÎÒRMINORZ
-CODE_SMELL
-usquid:S1226,"@Introduce a new variable instead of reusing the parameter "end".(Êåúù8Îíß°‚,HñÓRMINORZ
-CODE_SMELL
-r
-squid:S106E"9Replace this use of System.out or System.err by a logger.(‘Ä¸Éùÿÿÿÿ8¥ÙÔ¯‚,HÒÓRMAJORZ
-CODE_SMELL

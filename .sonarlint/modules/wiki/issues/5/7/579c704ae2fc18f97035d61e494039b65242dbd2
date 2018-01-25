@@ -1,26 +1,0 @@
-
-]squid:S16596"*Declare "answersIndex" on a separate line.(¨ë­şÿÿÿÿHËòRMINORZ
-CODE_SMELL
-ysquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(ÛôHÑòRMAJORZ
-CODE_SMELL
-ƒsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Çµí‘HÓòRCRITICALZ
-CODE_SMELL
-fsquid:S1197"8Move the array designator from the variable to the type.(‚ÔóóHÌòRMINORZ
-CODE_SMELL
-‡squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÛªàÒHÎòRMINORZ
-CODE_SMELL
-csquid:S16596"0Declare "answerCurrentIndex" on a separate line.(¨ë­şÿÿÿÿHÊòRMINORZ
-CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(ÄÜ¢‹ùÿÿÿÿHÍòRMINORZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íæî¨HÔòRMINORZ
-CODE_SMELL
-‹squid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ìéÍÿÿÿÿÿHÕòRMINORZ
-CODE_SMELL
-Œsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ–¿»ûÿÿÿÿHÏòRMINORZ
-CODE_SMELL
-‡squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").( šHĞòRMINORZ
-CODE_SMELL
-k
-squid:S106L"9Replace this use of System.out or System.err by a logger.(„õËøÿÿÿÿÿHÒòRMAJORZ
-CODE_SMELL

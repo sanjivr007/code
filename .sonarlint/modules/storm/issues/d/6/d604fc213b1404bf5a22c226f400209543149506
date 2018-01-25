@@ -1,258 +1,0 @@
-
-xsquid:S1764Â"KCorrect one of the identical sub-expressions on both sides of operator "||"(€Å×‰ûÿÿÿÿH‡ÔRMAJORZBUG
-Á%squid:RedundantThrowsDeclarationCheck´"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(”Ä²ËHˆÔRMINORZ
-CODE_SMELL
-k"squid:SwitchLastCaseIsDefaultCheck£""Add a default case to this switch.(äªÁ‡H‰ÔRCRITICALZ
-CODE_SMELL
-ksquid:S2629Ì"7Use the built-in formatting to construct this argument.(ÖèÍÎúÿÿÿÿHŠÔRMAJORZ
-CODE_SMELL
-fsquid:S2629Ï"7Use the built-in formatting to construct this argument.(¢æ„æH‹ÔRMAJORZ
-CODE_SMELL
-ksquid:S2629‘"7Use the built-in formatting to construct this argument.(ÖèÍÎúÿÿÿÿHŒÔRMAJORZ
-CODE_SMELL
-fsquid:S2629”"7Use the built-in formatting to construct this argument.(¢æ„æHÔRMAJORZ
-CODE_SMELL
-squid:S1192Ü"JDefine a constant instead of duplicating this literal "---------" 3 times.(Ó€ŠãıÿÿÿÿHÔRCRITICALZ
-CODE_SMELL
-€squid:S1192ê"NDefine a constant instead of duplicating this literal "Current-Page" 11 times.(Ç£´HÔRCRITICALZ
-CODE_SMELL
-}squid:S1192à"FDefine a constant instead of duplicating this literal "Error" 3 times.(†®ˆöüÿÿÿÿHÔRCRITICALZ
-CODE_SMELL
-‚squid:S1192ë"KDefine a constant instead of duplicating this literal "Page-Size" 11 times.(ÁñûßûÿÿÿÿH‘ÔRCRITICALZ
-CODE_SMELL
-squid:S1192É"HDefine a constant instead of duplicating this literal "Failure" 9 times.( ó–¡ıÿÿÿÿH’ÔRCRITICALZ
-CODE_SMELL
-zsquid:S1192â"HDefine a constant instead of duplicating this literal "Message" 3 times.(¬ı·öH“ÔRCRITICALZ
-CODE_SMELL
-{squid:S1192"IDefine a constant instead of duplicating this literal "RESOLVED" 5 times.(¡¯×ßH”ÔRCRITICALZ
-CODE_SMELL
-Šsquid:S1192Ì"SDefine a constant instead of duplicating this literal "Absolute path = {}" 4 times.(ÖèÍÎúÿÿÿÿH•ÔRCRITICALZ
-CODE_SMELL
-squid:S1192é"ODefine a constant instead of duplicating this literal "X-Total-Count" 11 times.(ìÜ§›H–ÔRCRITICALZ
-CODE_SMELL
-squid:S1192ß"MDefine a constant instead of duplicating this literal "ErrorMessage" 3 times.(ÇÛ†H—ÔRCRITICALZ
-CODE_SMELL
-ˆsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõH˜ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõH™ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõHšÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293ü"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõH›ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒº™HœÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293ì"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıüÈ„HÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293ú"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıüÈ„HÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293¥"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıüÈ„HŸÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõH ÔRMINORZ
-CODE_SMELL
-squid:S2293Â"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ï¶…ÄøÿÿÿÿH¡ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(™âÉõH¢ÔRMINORZ
-CODE_SMELL
-squid:S2293Ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ï¶…ÄøÿÿÿÿH£ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıüÈ„H¤ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(®øİòH¥ÔRMINORZ
-CODE_SMELL
-squid:S2293¨"YReplace the type specification in this constructor call with the diamond operator ("<>").(í†“ŒıÿÿÿÿH¦ÔRMINORZ
-CODE_SMELL
-ˆsquid:S2293·"YReplace the type specification in this constructor call with the diamond operator ("<>").(İ²áïH§ÔRMINORZ
-CODE_SMELL
-‡squid:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(Å5H¨ÔRMINORZ
-CODE_SMELL
-squid:S1871Â"MThis branch's code block is the same as the block for the branch on line 432.(œ³ë´üÿÿÿÿH©ÔRMAJORZ
-CODE_SMELL
-Zsquid:S2095Ä"0Close this "XSSFWorkbook" in a "finally" clause.(¸™á…HªÔRBLOCKERZBUG
-squid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(éòÔ°ùÿÿÿÿH«ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(ó×ÿ‚ùÿÿÿÿH¬ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine×"<This block of commented-out lines of code should be removed.(á…¥ŸûÿÿÿÿH­ÔRMAJORZ
-CODE_SMELL
-ysquid:CommentedOutCodeLineà"<This block of commented-out lines of code should be removed.(È©“H®ÔRMAJORZ
-CODE_SMELL
-ysquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(È©“H¯ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(…Ã„õH°ÔRMAJORZ
-CODE_SMELL
-ysquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(ÅæDH±ÔRMAJORZ
-CODE_SMELL
-ysquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(ÅæDH²ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(ÉàíŠüÿÿÿÿH³ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine˜"<This block of commented-out lines of code should be removed.(Ğº‰øÿÿÿÿH´ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àÓô§HµÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(Ğº‰øÿÿÿÿH¶ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(àÓô§H·ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(Ù»âÁüÿÿÿÿH¸ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(´¥àùÿÿÿÿH¹ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLineÊ"<This block of commented-out lines of code should be removed.(ÜÇ±’HºÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(ïªñøÿÿÿÿH»ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(ˆ“·çH¼ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineÆ"<This block of commented-out lines of code should be removed.(‹»æ†üÿÿÿÿH½ÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLineÈ"<This block of commented-out lines of code should be removed.(ĞÔ€”H¾ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineì"<This block of commented-out lines of code should be removed.(ÀÒ¶İüÿÿÿÿH¿ÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(½ı¥÷øÿÿÿÿHÀÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLine÷"<This block of commented-out lines of code should be removed.(–Ò›üÿÿÿÿHÁÔRMAJORZ
-CODE_SMELL
-zsquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(í”ÂòHÂÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineŒ	"<This block of commented-out lines of code should be removed.(…Ş›ïøÿÿÿÿHÃÔRMAJORZ
-CODE_SMELL
-squid:CommentedOutCodeLineŸ	"<This block of commented-out lines of code should be removed.(µ‘îúÿÿÿÿÿHÄÔRMAJORZ
-CODE_SMELL
-l
-squid:S106Ø"9Replace this use of System.out or System.err by a logger.(®øõ™şÿÿÿÿHÅÔRMAJORZ
-CODE_SMELL
-g
-squid:S106Ü"9Replace this use of System.out or System.err by a logger.(¶‘ü”HÆÔRMAJORZ
-CODE_SMELL
-l
-squid:S106›"9Replace this use of System.out or System.err by a logger.(ÍÖÖûÿÿÿÿHÇÔRMAJORZ
-CODE_SMELL
-l
-squid:S106Ü"9Replace this use of System.out or System.err by a logger.(Ó€ŠãıÿÿÿÿHÈÔRMAJORZ
-CODE_SMELL
-g
-squid:S106İ"9Replace this use of System.out or System.err by a logger.(öÌŠûHÉÔRMAJORZ
-CODE_SMELL
-l
-squid:S106†"9Replace this use of System.out or System.err by a logger.(ÆéÊ„øÿÿÿÿHÊÔRMAJORZ
-CODE_SMELL
-g
-squid:S106ø"9Replace this use of System.out or System.err by a logger.(öÈÛ¡HËÔRMAJORZ
-CODE_SMELL
-l
-squid:S106ù"9Replace this use of System.out or System.err by a logger.(´íÁğşÿÿÿÿHÌÔRMAJORZ
-CODE_SMELL
-g
-squid:S106‘"9Replace this use of System.out or System.err by a logger.(¦œß®HÍÔRMAJORZ
-CODE_SMELL
-f
-squid:S106’"9Replace this use of System.out or System.err by a logger.(çØî
-HÎÔRMAJORZ
-CODE_SMELL
-usquid:S1226ï"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHÏÔRMINORZ
-CODE_SMELL
-usquid:S1226ñ"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHĞÔRMINORZ
-CODE_SMELL
-psquid:S1226ò"AIntroduce a new variable instead of reusing the parameter "size".(ÛÒ¤ìHÑÔRMINORZ
-CODE_SMELL
-usquid:S1226Ï"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHÒÔRMINORZ
-CODE_SMELL
-usquid:S1226Ñ"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHÓÔRMINORZ
-CODE_SMELL
-usquid:S1226Ò"AIntroduce a new variable instead of reusing the parameter "size".(…“éÿÿÿÿÿHÔÔRMINORZ
-CODE_SMELL
-usquid:S1226‘"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHÕÔRMINORZ
-CODE_SMELL
-usquid:S1226“"AIntroduce a new variable instead of reusing the parameter "page".(‘ñş‘ÿÿÿÿÿHÖÔRMINORZ
-CODE_SMELL
-usquid:S1226”"AIntroduce a new variable instead of reusing the parameter "size".(…“éÿÿÿÿÿH×ÔRMINORZ
-CODE_SMELL
-„squid:S3776²"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Ÿ¹ê˜HØÔRCRITICALZ
-CODE_SMELL
-‰squid:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ôö°¸üÿÿÿÿHÙÔRCRITICALZ
-CODE_SMELL
-„squid:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(éï¡ÜHÚÔRCRITICALZ
-CODE_SMELL
-‰squid:S3776¿"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(´úÒ¤ÿÿÿÿÿHÛÔRCRITICALZ
-CODE_SMELL
-|squid:CallToDeprecatedMethod‚"<Remove this use of "CellRangeAddressList"; it is deprecated.(çòÔÙHÜÔRMINORZ
-CODE_SMELL
-|squid:CallToDeprecatedMethod‚"<Remove this use of "CellRangeAddressList"; it is deprecated.(çòÔÙHİÔRMINORZ
-CODE_SMELL
-~squid:S00100•"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡²»HŞÔRMINORZ
-CODE_SMELL
-ƒsquid:S00100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šà ŒıÿÿÿÿHßÔRMINORZ
-CODE_SMELL
-vsquid:S00112©"FDefine and throw a dedicated exception instead of using a generic one.(ûè¡HàÔRMAJORZ
-CODE_SMELL
-lsquid:S1854¬"8Remove this useless assignment to local variable "task".(Êœî«øÿÿÿÿHáÔRMAJORZ
-CODE_SMELL
-gsquid:S1854™"8Remove this useless assignment to local variable "task".(®øİòHâÔRMAJORZ
-CODE_SMELL
-nsquid:S1854¨":Remove this useless assignment to local variable "ticket".(í†“ŒıÿÿÿÿHãÔRMAJORZ
-CODE_SMELL
-ˆsquid:S00116~"TRename this field "sla_table" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îº³¬ÿÿÿÿÿHäÔRMINORZ
-CODE_SMELL
-squid:S00116”"_Rename this field "oms_detailRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÛÙ°HåÔRMINORZ
-CODE_SMELL
-”squid:S00116—"_Rename this field "pcm_detailRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É®’šûÿÿÿÿHæÔRMINORZ
-CODE_SMELL
-•squid:S00116š"fRename this field "payment_referenceRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢íÿHçÔRMINORZ
-CODE_SMELL
-squid:S00116"iRename this field "promotions_referenceRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆäÌÇıÿÿÿÿHèÔRMINORZ
-CODE_SMELL
-squid:S00116 "^Rename this field "follow_upRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„‡ÊëHéÔRMINORZ
-CODE_SMELL
-squid:S00117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÊÈ¾HêÔRMINORZ
-CODE_SMELL
-squid:S00117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëŞúÌHëÔRMINORZ
-CODE_SMELL
-†squid:S00117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÈ®…úÿÿÿÿHìÔRMINORZ
-CODE_SMELL
-†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÎ¬ÃÿÿÿÿÿHíÔRMINORZ
-CODE_SMELL
-†squid:S00117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÎ¬ÃÿÿÿÿÿHîÔRMINORZ
-CODE_SMELL
-†squid:S00117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÎ¬ÃÿÿÿÿÿHïÔRMINORZ
-CODE_SMELL
-squid:S00117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÓõ‡HğÔRMINORZ
-CODE_SMELL
-€squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üşÂtHñÔRMINORZ
-CODE_SMELL
-€squid:S00117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üşÂtHòÔRMINORZ
-CODE_SMELL
-†squid:S00117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šà ŒıÿÿÿÿHóÔRMINORZ
-CODE_SMELL
-€squid:S00117¦"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üşÂtHôÔRMINORZ
-CODE_SMELL
-squid:S00117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¹ê˜HõÔRMINORZ
-CODE_SMELL
-squid:S00117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•‰ÈùHöÔRMINORZ
-CODE_SMELL
-†squid:S00117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôö°¸üÿÿÿÿH÷ÔRMINORZ
-CODE_SMELL
-squid:S00117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ±‡§HøÔRMINORZ
-CODE_SMELL
-†squid:S00117€	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÅªãøÿÿÿÿHùÔRMINORZ
-CODE_SMELL
-squid:S00117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¸¬ûHúÔRMINORZ
-CODE_SMELL
-¡squid:UselessImportCheck"aRemove this unused import 'org.openxmlformats.schemas.spreadsheetml.x2006.main.CTDataValidation'.(‡§·ğùÿÿÿÿHûÔRMINORZ
-CODE_SMELL
-‰squid:UselessImportCheck/"IRemove this unused import 'org.springframework.web.servlet.ModelAndView'.(Ç¨ÿäûÿÿÿÿHüÔRMINORZ
-CODE_SMELL
-±squid:UselessImportCheck""vRemove this unused import 'org.springframework.cloud.cloudfoundry.com.fasterxml.jackson.core.JsonProcessingException'.(¶›û¸HıÔRMINORZ
-CODE_SMELL
-q
-squid:S899ë";Do something with the "boolean" value returned by "delete".(¯œãúıÿÿÿÿHşÔRMINORZVULNERABILITY
-l
-squid:S899ì";Do something with the "boolean" value returned by "delete".(íÔˆ¢HÿÔRMINORZVULNERABILITY
-q
-squid:S899ª";Do something with the "boolean" value returned by "delete".(¯œãúıÿÿÿÿH€ÕRMINORZVULNERABILITY
-l
-squid:S899«";Do something with the "boolean" value returned by "delete".(íÔˆ¢HÕRMINORZVULNERABILITY
-msquid:S1155ü">Use isEmpty() to check whether the collection is empty or not.( ÎóH‚ÕRMINORZ
-CODE_SMELL
